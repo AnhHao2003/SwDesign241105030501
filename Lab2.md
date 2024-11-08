@@ -4,8 +4,8 @@
 *Employee (Nhân viên)*
 
 * Thuộc tính:
-                    - employeeId: String
-                    - name: String
+                    -employeeId: String
+                    -name: String
 Nhiệm vụ:
 Gửi yêu cầu tạo báo cáo.
 Cung cấp thông tin cần thiết để tạo báo cáo.
