@@ -5,7 +5,7 @@ BáoCáo (Report):
 
 * Mô tả: Đại diện cho báo cáo hành chính, chứa các thông tin chi tiết liên quan đến báo cáo, như loại báo cáo và thời gian.
   
-*Thuộc tính:
+* Thuộc tính:
 
       -  mãBáoCáo: String
       -  loạiBáoCáo: String
@@ -16,7 +16,8 @@ BáoCáo (Report):
 * Phương thức:
   
       - thiếtLậpTiêuChí(): Nhận thông tin tiêu chí cho báo cáo từ Payroll Administrator.
-hiểnThị(): Hiển thị báo cáo theo các tiêu chí đã chỉ định.
+      - hiểnThị(): Hiển thị báo cáo theo các tiêu chí đã chỉ định.
+  
 QuảnLýBáoCáo (ReportManager):
 
 Mô tả: Chịu trách nhiệm tạo, lưu trữ và quản lý báo cáo trong hệ thống.
