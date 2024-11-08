@@ -1,10 +1,10 @@
 ## I.Ca Sử Dụng "Create Administrative Report"
-***1. Các lớp phân tích cho ca sử dụng "Create Administrative
+***1. Các lớp phân tích cho ca sử dụng "Create Administrative***
 
 *Employee (Nhân viên)*
 
 * Thuộc tính:
-          -  employeeId: String
+          - employeeId: String
           - name: String
 Nhiệm vụ:
 Gửi yêu cầu tạo báo cáo.
