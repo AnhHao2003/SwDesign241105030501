@@ -31,13 +31,14 @@ Cung cấp thông tin cần thiết để tạo báo cáo.
 *1.3 Report3Generator (Máy tạo báo cáo)*
 
 * Thuộc tính:
-          -reportTemplate: String </p>
+  
+            -reportTemplate: String </p>
 * Nhiệm vụ:
   
 - Tiếp nhận tiêu chí từ Employee.</p>
 - Tạo báo cáo theo tiêu chí báo cáo đã nhập.</p>
 
-  *1.4 ProjectManagementDatabase (Cơ sở dữ liệu quản lý dự án)*
+  **1.4 ProjectManagementDatabase (Cơ sở dữ liệu quản lý dự án)**
 
 * Nhiệm vụ:
 - Cung cấp danh sách số charge cho báo cáo “Total Hours Worked for a Project”.</p>
