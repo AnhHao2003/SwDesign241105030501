@@ -1,50 +1,43 @@
 ## I.Ca Sử Dụng "Create Administrative Report"
-***1. Các lớp phân tích cho ca sử dụng "Create Administrative Report":***
-  
-**BáoCáo (Report):**
+***1. Các lớp phân tích cho ca sử dụng "Create Administrative
 
-* Mô tả: Đại diện cho báo cáo hành chính, chứa các thông tin chi tiết liên quan đến báo cáo, như loại báo cáo và thời gian.
-  
-* Thuộc tính:
-
-      -  mãBáoCáo: String
-      -  loạiBáoCáo: String
-      - thờiGianBắtĐầu: Date
-      - thờiGianKếtThúc: Date
-      -  tênNhânViên: String
-      
-* Phương thức:
-  
-      - thiếtLậpTiêuChí(): Nhận thông tin tiêu chí cho báo cáo từ Payroll Administrator.
-      - hiểnThị(): Hiển thị báo cáo theo các tiêu chí đã chỉ định.
-  
-**QuảnLýBáoCáo (ReportManager):**
-
-* Mô tả: Chịu trách nhiệm tạo, lưu trữ và quản lý báo cáo trong hệ thống.
-  
-* Thuộc tính:
-  
-      - danhSáchBáoCáo: List<BáoCáo>
-  
-* Phương thức:
-  
-      - tạoBáoCáo(): Tạo báo cáo dựa trên các tiêu chí được chỉ định.
-      - lưuBáoCáo(): Lưu báo cáo vào vị trí và tên được chỉ định.
-  
-**QuảnTrịViên (Payroll Administrator):**
-
-* Mô tả: Người sử dụng hệ thống để tạo và quản lý báo cáo.
+*Employee (Nhân viên)*
 
 * Thuộc tính:
+          -  employeeId: String
+          - name: String
+Nhiệm vụ:
+Gửi yêu cầu tạo báo cáo.
+Cung cấp thông tin cần thiết để tạo báo cáo.
+Report (Báo cáo)
 
-      - mãQuảnTrịViên: String
-      - tên: String
-      - email: String
-      
-* Phương thức:
-  
-      - yêuCầuBáoCáo(): Yêu cầu tạo báo cáo và cung cấp thông tin tiêu chí.
-      -lưuBáoCáo(): Lưu báo cáo vào vị trí đã chỉ định.
-  
-**Biểu Đồ Tuần Tự (Sequence Diagram)**
+Thuộc tính:
+reportId: String
+reportType: String // "Total Hours Worked", "Total Hours Worked for a Project", "Vacation/Sick Leave", "Total Pay Year-to-Date"
+beginDate: Date
+endDate: Date
+content: String
+Nhiệm vụ:
+Lưu trữ thông tin báo cáo.
+Cung cấp phương thức để xuất báo cáo.
+ReportGenerator (Máy tạo báo cáo)
+
+Thuộc tính:
+reportTemplate: String
+Nhiệm vụ:
+Tiếp nhận tiêu chí từ Employee.
+Tạo báo cáo theo tiêu chí báo cáo đã nhập.
+ProjectManagementDatabase (Cơ sở dữ liệu quản lý dự án)
+
+Nhiệm vụ:
+Cung cấp danh sách số charge cho báo cáo “Total Hours Worked for a Project”.
+Lưu trữ và cung cấp thông tin về các dự án.
+ReportService (Dịch vụ báo cáo)
+
+Nhiệm vụ:
+Quản lý quy trình tạo báo cáo, bao gồm validate thông tin đầu vào và xử lý lưu báo cáo.
+ErrorHandler (Xử lý lỗi)
+
+Nhiệm vụ:
+Thông báo lỗi khi thông tin không đủ hoặc không hợp lệ.
 
