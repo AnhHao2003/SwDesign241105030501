@@ -8,7 +8,7 @@
           -employeeId: String
           -name: String
   
-* Nhiệm vụ:
+ Nhiệm vụ:
   
 Gửi yêu cầu tạo báo cáo.
 
@@ -24,7 +24,7 @@ Cung cấp thông tin cần thiết để tạo báo cáo.
           -endDate: Date
           -content: String
   
-* Nhiệm vụ:
+ Nhiệm vụ:
 - Lưu trữ thông tin báo cáo.</p>
 - Cung cấp phương thức để xuất báo cáo.</p>
 
@@ -33,13 +33,13 @@ Cung cấp thông tin cần thiết để tạo báo cáo.
 * Thuộc tính:
   
             -reportTemplate: String </p>
-* Nhiệm vụ:
+ Nhiệm vụ:
   
 - Tiếp nhận tiêu chí từ Employee.</p>
 - Tạo báo cáo theo tiêu chí báo cáo đã nhập.</p>
 **1.4 ProjectManagementDatabase (Cơ sở dữ liệu quản lý dự án)**
 
-* Nhiệm vụ:
+ Nhiệm vụ:
   
 - Cung cấp danh sách số charge cho báo cáo “Total Hours Worked for a Project”.</p>
 - Lưu trữ và cung cấp thông tin về các dự án.
@@ -47,10 +47,11 @@ Cung cấp thông tin cần thiết để tạo báo cáo.
 **1.5 ReportService (Dịch vụ báo cáo)**
 
 *  Nhiệm vụ:
--  Quản lý quy trình tạo báo cáo, bao gồm validate thông tin đầu vào và xử lý lưu báo cáo.
+  Quản lý quy trình tạo báo cáo, bao gồm validate thông tin đầu vào và xử lý lưu báo cáo.
 
 **1.6 ErrorHandler (Xử lý lỗi)**
 
 Nhiệm vụ:
+
 Thông báo lỗi khi thông tin không đủ hoặc không hợp lệ.
 
