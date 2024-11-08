@@ -122,9 +122,11 @@
 **Thuộc tính:**
 
       - danhSáchNhânViên: List<NhânViên>
+      
 **Phương thức:**
-      - tínhToánLương()
-      - gửiThôngBáo()
+
+         - tínhToánLương()
+         - gửiThôngBáo()
       
 *ThanhToán (Payment):*
 
