@@ -1,16 +1,21 @@
-## 1.Ca Sử Dụng "Create Administrative Report"
-* Các lớp phân tích cho ca sử dụng "Create Administrative Report":
+## I.Ca Sử Dụng "Create Administrative Report"
+***1. Các lớp phân tích cho ca sử dụng "Create Administrative Report":***
+  
 BáoCáo (Report):
 
-Mô tả: Đại diện cho báo cáo hành chính, chứa các thông tin chi tiết liên quan đến báo cáo, như loại báo cáo và thời gian.
-Thuộc tính:
-mãBáoCáo: String
-loạiBáoCáo: String
-thờiGianBắtĐầu: Date
-thờiGianKếtThúc: Date
-tênNhânViên: String
-Phương thức:
-thiếtLậpTiêuChí(): Nhận thông tin tiêu chí cho báo cáo từ Payroll Administrator.
+* Mô tả: Đại diện cho báo cáo hành chính, chứa các thông tin chi tiết liên quan đến báo cáo, như loại báo cáo và thời gian.
+  
+*Thuộc tính:
+
+      -  mãBáoCáo: String
+      -  loạiBáoCáo: String
+      - thờiGianBắtĐầu: Date
+      - thờiGianKếtThúc: Date
+      -  tênNhânViên: String
+      
+* Phương thức:
+  
+      - thiếtLậpTiêuChí(): Nhận thông tin tiêu chí cho báo cáo từ Payroll Administrator.
 hiểnThị(): Hiển thị báo cáo theo các tiêu chí đã chỉ định.
 QuảnLýBáoCáo (ReportManager):
 
