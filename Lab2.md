@@ -6,17 +6,22 @@
 * Thuộc tính:
                     -employeeId: String
                     -name: String
-Nhiệm vụ:
+  
+* Nhiệm vụ:
+  
 Gửi yêu cầu tạo báo cáo.
-Cung cấp thông tin cần thiết để tạo báo cáo.
-Report (Báo cáo)
 
-Thuộc tính:
-reportId: String
-reportType: String // "Total Hours Worked", "Total Hours Worked for a Project", "Vacation/Sick Leave", "Total Pay Year-to-Date"
-beginDate: Date
-endDate: Date
-content: String
+Cung cấp thông tin cần thiết để tạo báo cáo.
+
+*Report (Báo cáo)*
+
+* Thuộc tính:
+  
+          -reportId: String
+          -reportType: String // "Total Hours Worked", "Total Hours Worked for a Project", "Vacation/Sick Leave", "Total Pay Year-to-Date"
+          -beginDate: Date
+          -endDate: Date
+          -content: String
 Nhiệm vụ:
 Lưu trữ thông tin báo cáo.
 Cung cấp phương thức để xuất báo cáo.
