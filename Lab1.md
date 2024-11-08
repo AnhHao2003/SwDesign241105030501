@@ -120,8 +120,9 @@
 * Mô tả: Chịu trách nhiệm tính toán lương cho nhân viên dựa trên số giờ làm việc hoặc doanh thu từ hoa hồng.
   
 **Thuộc tính:**
+
       - danhSáchNhânViên: List<NhânViên>
-      - Phương thức:
+**Phương thức:**
       - tínhToánLương()
       - gửiThôngBáo()
       
