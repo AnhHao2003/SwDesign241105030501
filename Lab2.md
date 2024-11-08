@@ -10,9 +10,9 @@
   
  Nhiệm vụ:
   
-Gửi yêu cầu tạo báo cáo.
+- Gửi yêu cầu tạo báo cáo.
 
-Cung cấp thông tin cần thiết để tạo báo cáo.
+- Cung cấp thông tin cần thiết để tạo báo cáo.
 
 **1.2 Report (Báo cáo)**
 
@@ -46,12 +46,12 @@ Cung cấp thông tin cần thiết để tạo báo cáo.
 
 **1.5 ReportService (Dịch vụ báo cáo)**
 
-*  Nhiệm vụ:
-  Quản lý quy trình tạo báo cáo, bao gồm validate thông tin đầu vào và xử lý lưu báo cáo.
+  Nhiệm vụ:
+  - Quản lý quy trình tạo báo cáo, bao gồm validate thông tin đầu vào và xử lý lưu báo cáo.
 
 **1.6 ErrorHandler (Xử lý lỗi)**
 
 Nhiệm vụ:
 
-Thông báo lỗi khi thông tin không đủ hoặc không hợp lệ.
+- Thông báo lỗi khi thông tin không đủ hoặc không hợp lệ.
 
