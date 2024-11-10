@@ -16,7 +16,7 @@ Từ mô tả, các lớp phân tích chính như sau:
 
 * Thuộc tính :
   
-     - administratorID,
+       - administratorID,
      -  name
   
 * Trách nhiệm :  Yêu cầu tạo báo cáo, chỉ định tiêu chí, quyết định lưu hay hủy báo cáo.</p>
