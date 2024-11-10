@@ -15,8 +15,8 @@ Từ mô tả, các lớp phân tích chính như sau:
 *Quản trị viên tiền lương*
 
 * Thuộc tính :
-                    - administratorID,
-                    - name
+                  - administratorID,
+                  - name
   
 * Trách nhiệm :  Yêu cầu tạo báo cáo, chỉ định tiêu chí, quyết định lưu hay hủy báo cáo.</p>
 *Hệ thống*
