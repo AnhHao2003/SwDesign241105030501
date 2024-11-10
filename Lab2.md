@@ -5,16 +5,16 @@
 Từ mô tả, các lớp phân tích chính như sau:
 
 *PayrollAdministrator* - Đại diện cho người yêu cầu và quản lý việc tạo báo cáo.</p>
-*Hệ thống* - Xử lý tương tác tổng thể để tạo báo cáo, nhắc nhở tiêu chí, tạo báo cáo và lưu báo cáo nếu cần.
-*Báo cáo* - Biểu thị dữ liệu báo cáo được tạo dựa trên các tiêu chí đã chỉ định.
-*ReportCriteria* - Ghi lại các tiêu chí để tạo báo cáo (ví dụ: loại, ngày tháng, tên nhân viên).
+*Hệ thống* - Xử lý tương tác tổng thể để tạo báo cáo, nhắc nhở tiêu chí, tạo báo cáo và lưu báo cáo nếu cần.</p>
+*Báo cáo* - Biểu thị dữ liệu báo cáo được tạo dựa trên các tiêu chí đã chỉ định.</p>
+*ReportCriteria* - Ghi lại các tiêu chí để tạo báo cáo (ví dụ: loại, ngày tháng, tên nhân viên).</p>
 *FileManager* - Chịu trách nhiệm lưu báo cáo vào vị trí đã chỉ định nếu được yêu cầu. </p>
 
 **Xác định trách nhiệm và thuộc tính**
 
 *Quản trị viên tiền lương*
 
-Thuộc tính : administratorID,name
+* Thuộc tính : administratorID,name
 Trách nhiệm : Yêu cầu tạo báo cáo, chỉ định tiêu chí, quyết định lưu hay hủy báo cáo.
 Hệ thống
 
