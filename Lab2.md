@@ -91,15 +91,15 @@ Từ mô tả, các lớp phân tích chính như sau:
       - type,
       - content,
       - creationDate
-* Trách nhiệm : Lưu trữ dữ liệu báo cáo được tạo dựa trên các tiêu chí đã chỉ định.
+* Trách nhiệm : Lưu trữ dữ liệu báo cáo được tạo dựa trên các tiêu chí đã chỉ định.</p>
 > Tiêu chuẩn báo cáo
 
 * Thuộc tính :
   
-   - reportType,
-   - beginDate,
-   - endDate,
-   - chargeNumber
+       - reportType,
+       - beginDate,
+       - endDate,
+       - chargeNumber
     
 * Trách nhiệm : Lưu trữ các tiêu chí cần thiết để tạo báo cáo, bao gồm các tiêu chí tùy chọn chargeNumbercho báo cáo cụ thể của dự án.
 > Cơ sở dữ liệu quản lý dự án
