@@ -17,7 +17,7 @@ Từ mô tả, các lớp phân tích chính như sau:
 * Thuộc tính :
   
        - administratorID,
-       -  name
+       - name
   
 * Trách nhiệm :  Yêu cầu tạo báo cáo, chỉ định tiêu chí, quyết định lưu hay hủy báo cáo.</p>
 >  Hệ thống
@@ -96,10 +96,10 @@ Từ mô tả, các lớp phân tích chính như sau:
 
 * Thuộc tính :
   
-   -  reportType,
-   -  beginDate,
-   -  endDate,
-   -  chargeNumber
+   - reportType,
+   - beginDate,
+   - endDate,
+   - chargeNumber
     
 * Trách nhiệm : Lưu trữ các tiêu chí cần thiết để tạo báo cáo, bao gồm các tiêu chí tùy chọn chargeNumbercho báo cáo cụ thể của dự án.
 > Cơ sở dữ liệu quản lý dự án
