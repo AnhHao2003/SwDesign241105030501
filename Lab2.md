@@ -60,3 +60,59 @@ Từ mô tả, các lớp phân tích chính như sau:
 
  ![Diagram](https://www.planttext.com/api/plantuml/png/V5DDI-j05DtdLzobBkeFA2BL5X7KuaTu-v26P22Tw6GY1d7bKeJdKkJ1onCHV9JNdJ2pS36b_-F-0l-2TsmQOzDdO3PpxjnxxZadR_graqfFo6mOEtxifIaSUBb8udXpC6ISfL9uCX5muG1zBHYQXyCCrGDt1Uhh7ymySsZ3iHICXsM9RDm1vEOvww9wohPCaNJfhAoMY9_na9374vVPciYCAkWqor6zoibFciIZlUau8-ZIAMaUvwaCXYKn08cgI1hTgxdDxkUcyFiHgX5lOX53VSNTY0OtMiR4OoT1zUBle7xAQtX5xIWuIOIiQpQlMjGgfaO5MxpbgEzOZuHf0A7vdRjsKq9wdWpgo_VdhvQjqQJN5Km6WdaLpHcN_p7z6Bs5wf_rWmIj4oZHNUkM6ndbVmLj8FgH-SFdSTcZMAtFkc-KL2UtfAYiEr7HtMPniEznBmm-OpYvdOvH_-9X3zNVfGcqhnPJQAtxwjVIhBTQ6_DqjK5EnzE2d90K5pX3VS-S4hDb2rAs8KKzWW7gHnhQgBFjh5DrfBvT6qBKDyoAeQy-s3hbmxMrxsU1jCg1Jz8vdO0FxD_y3W00__y30000)
 
+## II.Ca Sử Dụng "Create Employee Report"
+
+**1: Xác định các lớp phân tích**
+
+*Nhân viên* - Đại diện cho tác nhân yêu cầu và quản lý việc tạo ra nhiều báo cáo khác nhau.</p>
+*Hệ thống* - Quản lý quy trình tạo báo cáo, nhắc nhở nhập tiêu chí, lấy số hiệu phí nếu cần, tạo báo cáo và lưu báo cáo nếu được yêu cầu.</p>
+*Báo cáo* - Biểu thị dữ liệu báo cáo được tạo dựa trên các tiêu chí cụ thể.</p>
+*ReportCriteria* - Lưu trữ các tiêu chí (loại báo cáo, ngày tháng và tùy chọn là số phí) để tạo báo cáo.</p>
+*ProjectManagementDatabase* - Cung cấp số liệu tính phí khả dụng cho báo cáo "Tổng số giờ làm việc cho một dự án".</p>
+*FileManager* - Xử lý việc lưu báo cáo vào một vị trí cụ thể nếu Nhân viên yêu cầu.</p>
+**2: Xác định trách nhiệm và thuộc tính**
+
+> Người lao động
+
+* Thuộc tính : 
+
+      - employeeID,
+      - name
+* Trách nhiệm : Yêu cầu tạo báo cáo, chỉ định tiêu chí, chọn số phí (nếu cần) và quyết định lưu hay hủy báo cáo.
+> Hệ thống
+
+* Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.</p>
+* Trách nhiệm : Quản lý việc tạo báo cáo, nhắc nhở về tiêu chí báo cáo, lấy số hiệu chi phí (nếu cần), tạo báo cáo, hiển thị cho Nhân viên và xử lý việc lưu hoặc hủy bỏ dựa trên quyết định của Nhân viên.</P>
+> Báo cáo
+
+* Thuộc tính :
+  
+      - reportID,
+      - type,
+      -  content,
+      -  creationDate
+* Trách nhiệm : Lưu trữ dữ liệu báo cáo được tạo dựa trên các tiêu chí đã chỉ định.
+> Tiêu chuẩn báo cáo
+
+* Thuộc tính :
+  
+  -  reportType,
+  -  beginDate,
+  -  endDate,
+  -  chargeNumber
+* Trách nhiệm : Lưu trữ các tiêu chí cần thiết để tạo báo cáo, bao gồm các tiêu chí tùy chọn chargeNumbercho báo cáo cụ thể của dự án.
+> Cơ sở dữ liệu quản lý dự án
+
+* Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
+
+
+* Trách nhiệm : Cung cấp danh sách số chi phí cho các báo cáo theo dự án.</p>
+> Trình quản lý tập tin
+
+* Thuộc tính :  
+
+      - filePath,
+      - fileName
+* Trách nhiệm : Lưu báo cáo vào một vị trí cụ thể nếu Nhân viên yêu cầu.
+
+
