@@ -12,7 +12,7 @@ Từ mô tả, các lớp phân tích chính như sau:
 
 **Xác định trách nhiệm và thuộc tính**
 
-> - Quản trị viên tiền lương*
+>  Quản trị viên tiền lương*
 
 * Thuộc tính :
   
