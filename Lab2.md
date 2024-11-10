@@ -1,58 +1,35 @@
 ## I.Ca Sử Dụng "Create Administrative Report"
 ***1. Các lớp phân tích cho ca sử dụng "Create Administrative***
+**Xác định các lớp phân tích**
 
-**1.1 Employee (Nhân viên)**
+Từ mô tả, các lớp phân tích chính như sau:
 
-* Thuộc tính:
-  
-          -employeeId: String
-          -name: String
-  
- Nhiệm vụ:
-  
-- Gửi yêu cầu tạo báo cáo.
+*PayrollAdministrator* - Đại diện cho người yêu cầu và quản lý việc tạo báo cáo.</p>
+*Hệ thống* - Xử lý tương tác tổng thể để tạo báo cáo, nhắc nhở tiêu chí, tạo báo cáo và lưu báo cáo nếu cần.
+*Báo cáo* - Biểu thị dữ liệu báo cáo được tạo dựa trên các tiêu chí đã chỉ định.
+*ReportCriteria* - Ghi lại các tiêu chí để tạo báo cáo (ví dụ: loại, ngày tháng, tên nhân viên).
+*FileManager* - Chịu trách nhiệm lưu báo cáo vào vị trí đã chỉ định nếu được yêu cầu. </p>
 
-- Cung cấp thông tin cần thiết để tạo báo cáo.
+**Xác định trách nhiệm và thuộc tính**
 
-**1.2 Report (Báo cáo)**
+*Quản trị viên tiền lương*
 
-* Thuộc tính:
-  
-          -reportId: String
-          -reportType: String // "Total Hours Worked", "Total Hours Worked for a Project", "Vacation/Sick Leave", "Total Pay Year-to-Date"
-          -beginDate: Date
-          -endDate: Date
-          -content: String
-  
- Nhiệm vụ:
-- Lưu trữ thông tin báo cáo.</p>
-- Cung cấp phương thức để xuất báo cáo.</p>
+Thuộc tính : administratorID,name
+Trách nhiệm : Yêu cầu tạo báo cáo, chỉ định tiêu chí, quyết định lưu hay hủy báo cáo.
+Hệ thống
 
-**1.3 Report3Generator (Máy tạo báo cáo)**
+Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
+Trách nhiệm : Quản lý quy trình tạo báo cáo, xác thực thông tin, hiển thị báo cáo và lưu hoặc hủy báo cáo theo yêu cầu của Quản trị viên tiền lương.
+Báo cáo
 
-* Thuộc tính:
-  
-            -reportTemplate: String </p>
- Nhiệm vụ:
-  
-- Tiếp nhận tiêu chí từ Employee.</p>
-- Tạo báo cáo theo tiêu chí báo cáo đã nhập.</p>
+Thuộc tính : reportID, type, content,creationDate
+Trách nhiệm : Lưu trữ nội dung báo cáo được tạo dựa trên các tiêu chí đã chỉ định.
+Tiêu chuẩn báo cáo
 
-**1.4 ProjectManagementDatabase (Cơ sở dữ liệu quản lý dự án)**
+Thuộc tính : reportType, beginDate, endDate,employeeNames
+Trách nhiệm : Lưu trữ các tiêu chí cần thiết để tạo báo cáo.
+Trình quản lý tập tin
 
- Nhiệm vụ:
-  
-- Cung cấp danh sách số charge cho báo cáo “Total Hours Worked for a Project”.</p>
-- Lưu trữ và cung cấp thông tin về các dự án.
-
-**1.5 ReportService (Dịch vụ báo cáo)**
-
-  Nhiệm vụ:
-  - Quản lý quy trình tạo báo cáo, bao gồm validate thông tin đầu vào và xử lý lưu báo cáo.
-
-**1.6 ErrorHandler (Xử lý lỗi)**
-
-Nhiệm vụ:
-
-- Thông báo lỗi khi thông tin không đủ hoặc không hợp lệ.
+Thuộc tính : filePath,fileName
+Trách nhiệm : Lưu báo cáo vào đường dẫn đã chỉ định nếu được yêu cầu.
 
