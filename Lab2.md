@@ -14,22 +14,38 @@ Từ mô tả, các lớp phân tích chính như sau:
 
 *Quản trị viên tiền lương*
 
-* Thuộc tính : administratorID,name
-Trách nhiệm : Yêu cầu tạo báo cáo, chỉ định tiêu chí, quyết định lưu hay hủy báo cáo.
-Hệ thống
+* Thuộc tính :
+          - administratorID,
+          - name
+  
+* Trách nhiệm :  Yêu cầu tạo báo cáo, chỉ định tiêu chí, quyết định lưu hay hủy báo cáo.</p>
+*Hệ thống*
 
-Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
-Trách nhiệm : Quản lý quy trình tạo báo cáo, xác thực thông tin, hiển thị báo cáo và lưu hoặc hủy báo cáo theo yêu cầu của Quản trị viên tiền lương.
-Báo cáo
+* Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.</p>
+* Trách nhiệm : Quản lý quy trình tạo báo cáo, xác thực thông tin, hiển thị báo cáo và lưu hoặc hủy báo cáo theo yêu cầu của Quản trị viên tiền lương.</p>
+*Báo cáo*
 
-Thuộc tính : reportID, type, content,creationDate
-Trách nhiệm : Lưu trữ nội dung báo cáo được tạo dựa trên các tiêu chí đã chỉ định.
-Tiêu chuẩn báo cáo
+* Thuộc tính : 
+        - reportID, 
+        - type, 
+        - content,
+        - creationDate
+* Trách nhiệm : Lưu trữ nội dung báo cáo được tạo dựa trên các tiêu chí đã chỉ định.</p>
 
-Thuộc tính : reportType, beginDate, endDate,employeeNames
-Trách nhiệm : Lưu trữ các tiêu chí cần thiết để tạo báo cáo.
-Trình quản lý tập tin
+*Tiêu chuẩn báo cáo*
 
-Thuộc tính : filePath,fileName
-Trách nhiệm : Lưu báo cáo vào đường dẫn đã chỉ định nếu được yêu cầu.
+* Thuộc tính :
+        - reportType,
+        - beginDate,
+        - endDate,
+        -  employeeNames
+  
+* Trách nhiệm : Lưu trữ các tiêu chí cần thiết để tạo báo cáo.</p>
+*Trình quản lý tập tin*
 
+* Thuộc tính :
+        - filePath,
+        - fileName
+*Trách nhiệm : Lưu báo cáo vào đường dẫn đã chỉ định nếu được yêu cầu.
+
+**Biểu đồ trình tự**
