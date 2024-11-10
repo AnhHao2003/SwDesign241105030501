@@ -17,7 +17,7 @@ Từ mô tả, các lớp phân tích chính như sau:
 * Thuộc tính :
   
        - administratorID,
-     -  name
+       -  name
   
 * Trách nhiệm :  Yêu cầu tạo báo cáo, chỉ định tiêu chí, quyết định lưu hay hủy báo cáo.</p>
 *Hệ thống*
@@ -26,7 +26,8 @@ Từ mô tả, các lớp phân tích chính như sau:
 * Trách nhiệm : Quản lý quy trình tạo báo cáo, xác thực thông tin, hiển thị báo cáo và lưu hoặc hủy báo cáo theo yêu cầu của Quản trị viên tiền lương.</p>
 *Báo cáo*
 
-* Thuộc tính : 
+* Thuộc tính :
+  
         - reportID, 
         - type, 
         - content,
@@ -36,6 +37,7 @@ Từ mô tả, các lớp phân tích chính như sau:
 *Tiêu chuẩn báo cáo*
 
 * Thuộc tính :
+  
         - reportType,
         - beginDate,
         - endDate,
@@ -45,6 +47,7 @@ Từ mô tả, các lớp phân tích chính như sau:
 *Trình quản lý tập tin*
 
 * Thuộc tính :
+  
         - filePath,
         - fileName
 *Trách nhiệm : Lưu báo cáo vào đường dẫn đã chỉ định nếu được yêu cầu.
