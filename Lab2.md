@@ -50,6 +50,7 @@ Từ mô tả, các lớp phân tích chính như sau:
   
         - filePath,
         - fileName
-*Trách nhiệm : Lưu báo cáo vào đường dẫn đã chỉ định nếu được yêu cầu.
+* Trách nhiệm : Lưu báo cáo vào đường dẫn đã chỉ định nếu được yêu cầu.
 
 **Biểu đồ trình tự**
+
