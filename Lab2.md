@@ -37,11 +37,11 @@ Từ mô tả, các lớp phân tích chính như sau:
 >  Tiêu chuẩn báo cáo
 
 * Thuộc tính :
-  
+ 
         - reportType,
         - beginDate,
         - endDate,
-        -  employeeNames
+        - employeeNames
   
 * Trách nhiệm : Lưu trữ các tiêu chí cần thiết để tạo báo cáo.</p>
 > Trình quản lý tập tin
