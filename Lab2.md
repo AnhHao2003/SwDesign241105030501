@@ -120,10 +120,10 @@ Từ mô tả, các lớp phân tích chính như sau:
 
 ![Diagram](https://www.planttext.com/api/plantuml/png/X9J1Qjj048Rl-nH3JYsqBn1m2LMXEOX2g0ZjKLdBba1Q2sbbgcFeeOTIg0yzbjer8L1gcb9waGWvhF5xx1Fq5VgFxDgIar23XTZvPkUVVyR-KzySvThFT974mfTwbD6Bq7nLfv7vfiZFAKXIaI8UoIZrbQPZMx_pGbjFr933UPbtmXxo2YSqYwTcDdBmPIYJ7QOJIdKdvgncBstzvPcjVxWHIXKdXQtcoZNNEFffpXjDQT8_wrRDp7SLRb4FYIc3WqI8NezE2ZFRCEJP2fLP0ZKQUZs15kdn4sw53karz9EqrML1ka7Fc99u20R0CTxbekOTJRVWpQMP1EiKC0liHNedIm_Y4Kf5kvD7f8PcMf8EpKmD7mhXnvhSDRIJ7fif7Q3NJxWTfateEHpxJAwP9dJAvabomX6nSGJd3WJXisc2BOGoBojAUWFVBZGNbfJpFJACA6M9qlp2IVLRDQbDpjOeBuFRDBRr-HsPxL9hluuXwAr2HxP-Vrz2npE07zGU5AY--3S6R0whwCw8-cZM9vtnzkwy5lTBsQKk9sQ-dlbcQKfRtMXQVWI6nN5NLmLlIpCAVjyEegtzrXB5ZExMufOlxJrYqOCe3cYCoOvP7HfPD5UqQmoIlPtwNnuIjj9UiVKgjDL2xVU-dAokR3sNwyGWpWF-jL-MUvrslMo0rjfZGaTuyD_9Nm000F__0m00)
 
-**Bước 4: Biểu đồ lớp**
+**4: Biểu đồ lớp**
 ![Diagram](https://www.planttext.com/api/plantuml/png/X5J1IkH04BtdA_he7iOFo64HPmw2mx2BGVOwH4atn9vnfdinY8V5WmTPs3ak8Xf51Dt1sPEGPl7GG_wZlc1_OQjZfkr9ps8W4EfLTxrwhof_rSl6MFH7GXwaGPpsnsFIe_g6xpBzmCbnGF1faGDzwqH3iYD6Z2SrABmO8Pb-a6qexkMcpWTjVDS-r4WiUOB8tJ1Y9eVgwHj4GNtdEw0cRSe-kSYXpA1u4VCVeCuvxPOpYT19K1FU0dKMuTa9Jsh6X0Weye5NtDBoYn_fFEvHAARSnyH8PbyaaXQho546wfGR0kTUmHIfRWsWU8wHv7tcu9Rz8kQARMCDgLEyAcVDA0VratLGLmz8z7KM6IKGwVJ5lYjERt5gLICkGQk7n_ILpl_8LjKteNWolg7cBeSQtJQkHbGNyJ8uVfEvELdp2QefN8yiqNQPepzN7L1FNMpbJ7v6psvvL__1q6_zZTlfID7BRDdBaqMt8_sBKtiomdk6jk7vf9o1kkH91uh7bOlmcj_WRAPWsNfdcrgjZqiJ719HpieSlmIE9FaAwe85Re8vu7iI6j6cP0_K7TPjvZjfbVbUmllQXTKQaADg3og7S64P6I89dzug4KEIu7upuw0whJG9BAtrzNTx8iBWM1FhRUppFVF3-WS00F__0m00)
 
-## III. Ca Sử Dụng "Login"
+## III. Ca Sử dụng cho "Login"
 
 **1. Xác định các lớp phân tích**
 
@@ -211,3 +211,115 @@ Dựa trên trường hợp sử dụng, các lớp phân tích chính là:
 **4.Biểu đồ lớp**
 ![Diagram](https://www.planttext.com/api/plantuml/png/b5HFQnf17BtlfvXZXVe5F8G4XLeYWTPDyBfPnHdgpWQT2GsXXvA312-Hda8fPIjIQWXDQQ3W7d8OyNlC9-XNo9lDLjr_qdZmy9ltU_j-x_Tc_eOFkmFXz8NqUfRRSmO3yaRg-OJRVHsEZfYQSPlfy2DlBE-M0U-ISuj4ltTKXr-PhUU1RrCrymwe-iOZ_8jI5bBLyzkJ0uf_iHtOKh-T1EA35Skgwt1e0pZU476cPXBKtoKatFEkpNWEEuN-2svQH_y9Qwd0ZSIkJqN1ZExMmTuNJhEkniEKYQSc6zKAQOe-uztuKEJKUZuSOyKzYp5cSQgOw39zD82FUxp9E6sf2PozPca4TZAVIfE26viY4GzR0FiKXkLzOd45KuSmDLAQHdWw_E76kNe5u1S0QhuyxdN-3HXdBbKMElpJ06_TTo3zKnRG1TbdLiStUOftvNyDrhZqI8VJp2Qoo-vu9w1O5qh9IOfIWBRNxHNq9SdGvASasRQHcUeoQEAYGFhFXl5LhWJ3AFaSlQ8lprfOwhHORYd14FSjnYhWj6OMlxZ2TJ6tDK_lzYUaNDv9tEOA4V69C3awDSkpDW6c8NTX5PEoMz965J2N-iGr357SH9J_QyoSsseuiuP22hxvourUWo4drRU7jOoKX82dPoDg6vdWt9in6BTsExnjtjH70000__y30000)
 
+## V.Ca sử dụng cho 'Maintain Purchase Order'
+
+**1. Xác định các lớp phân tích**
+
+Dựa trên trường hợp sử dụng, các lớp phân tích chính là:
+
+*CommissionedEmployee* - Đại diện cho tác nhân thực hiện các thao tác trên đơn đặt hàng mua.
+*Hệ thống* - Quản lý tương tác và luồng xử lý để duy trì đơn đặt hàng mua.
+*PurchaseOrder* - Biểu thị thực thể đơn đặt hàng mua cần được tạo, cập nhật hoặc xóa.
+*PurchaseOrderService* - Xử lý các hoạt động thực tế (tạo, cập nhật, xóa) trên dữ liệu đơn đặt hàng.
+*Cơ sở dữ liệu* - Lưu trữ hồ sơ đơn đặt hàng và xử lý việc truy xuất và xóa.
+
+**2.Xác định trách nhiệm và thuộc tính**
+> Nhân viên được ủy quyền
+
+* Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
+* Trách nhiệm : Khởi tạo việc tạo, cập nhật hoặc xóa đơn đặt hàng mua.
+> Hệ thống
+
+* Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
+* Trách nhiệm : Quản lý tương tác của người dùng, nhắc nhở nhập liệu và truyền thông tin đến PurchaseOrderService.
+> Đơn đặt hàng
+
+* Thuộc tính :
+  
+        -  purchaseOrderId: String
+        -  customerContact: String
+        -  billingAddress: String
+        -  products: List<String>
+        -  date: Date
+        -  status: String(mở hoặc đóng)
+        -  commissionedEmployeeId: String
+  
+* Trách nhiệm : Thể hiện hồ sơ đơn đặt hàng mua riêng lẻ với tất cả các thuộc tính có liên quan.
+> Dịch vụ mua hàng
+
+* Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
+* Trách nhiệm : Thực hiện các thao tác tạo, cập nhật và xóa trên đơn đặt hàng mua.
+> Cơ sở dữ liệu
+
+* Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
+* Trách nhiệm : Lưu trữ và truy xuất thông tin đơn đặt hàng.
+**3. Biểu đồ trình tự**
+  ![Diagram](https://www.planttext.com/api/plantuml/png/t9InQi9G58RtFCLvWRv08QMG3WxIHH4xncimWNeJaXlHiNJeu5AHJXrgAb8Gf8LsCaE7Axx7VOA-GizD0hqt8UhSASFvpd_k-Vz3VjBlouZP8Ok7juPDc1_2jSjVQSVZQzhmxOP8vtG0TWJ4CGBaFE85DcM0XOUsAz9PNeqcaLQ-4kcKk1sHhdQF-uGs-2Bd0h_bX2CDjVP9IwGlsF7Uz50rbbo_PnYc2MsnJNp8923NC4s3E71s8IV2ETpmTGn4RDzYO3axawmhMKCYI2AlWox_GYNcKOrMPQqO0QHNGHrTQEVxO4UxChqe8TJl8T3SV-3e4BVKAAnLPKPy0GEEp90lQpJpTtPvGe2wOhkXnVuZaJvxbJxLYGQQV8yuXZSjWp2KxPdr5ee6U0puOIScGB8MMhGS3wByIbKs6npKBVBdLnXFO1nZKkoW-GXCj4MPw_XIlH90ABPBwU9TNVBb33G_JxWjFFQDZLMHFdcdNfUbEek3vX3jawFNfkwxcw6JQa07Rqa3vJLq-QTzuXMCC_I_fgykepecjzPMK8gLTtVB5fKUdDMFn5mDBNk2SUdGlloP_m800F__0m00)
+
+  **4.Biểu đồ lớp**
+  ![Diagram](https://www.planttext.com/api/plantuml/png/b5JDQi904BxdAVPOeRw0517qOAb8gQbu3L6oItKYPbCgfQSUf7Yfz5HwgAcKKa5gQK_cqCEAxx5Fq5Ve98PeJ1IRmyBEVFFDDp-RN_SdPt6jm-rMKz6RccMHCXKlK6LY34LJAqht0GnohH3_kw3IVMQgd3ccVypl5muKnH2CWrGSafUpIRjCyUIxWJNnfKKGDqeW1lFtL0GEraHqnTX6wZTRfU8R39L10Zjbqhq5BxI_9wmc7DqN2w6NRwbHtrdOrTPgLjQWc3HfYT6QDKCglCF029nDVmhOWXEAucWYPZv0xLeUAxXJgGPKDOK3co1BpaPmYeBVM-WgCOiVBVtP002667RHLT1u8p3n3bQFVSFKR9CFLIUjIOWAAowWE9rMfViQgptUthQ93AjxAffrMzlRvd4zH1wIJPBaeKI2rYQKNpWLN4kK_L72rUZPeTZcOch_GollsDsQBMUlMwMc8WJxoangUpgTZJoK3E6BAN8OXEFQa4lfFZ5b7U0594ucWvlYJaWThNZJgKbqZu6QE2dkhzeZIaqCzJZZtKCfcFDJznzQ3qZ-xBmGan8Hi7oHVbWVJ-_f4iv0oJMWxlsa_W000F__0m00)
+
+## VI. Ca sử dụng cho 'Run Payroll'
+
+Bước 1: Xác định các lớp phân tích
+Dựa trên mô tả, các lớp chính liên quan đến trường hợp sử dụng này là:
+
+PayrollSystem - Quản lý toàn bộ quy trình tính lương và kích hoạt chạy bảng lương.
+Nhân viên - Đại diện cho mỗi nhân viên được trả lương.
+TimeCard - Lưu trữ số giờ làm việc của nhân viên theo giờ.
+PurchaseOrder - Biểu thị lệnh mua hàng cho nhân viên hưởng lương, đóng góp vào tiền lương của họ.
+BankTransaction - Biểu thị dữ liệu giao dịch được gửi đến Hệ thống Ngân hàng để thanh toán gửi tiền trực tiếp.
+BankSystem - Đại diện cho hệ thống bên ngoài để xử lý các giao dịch ngân hàng.
+PayrollService - Xử lý tính toán bảng lương và thanh toán.
+Cơ sở dữ liệu - Lưu trữ dữ liệu nhân viên và quản lý các hoạt động truy xuất và xóa.
+Bước 2: Xác định trách nhiệm và thuộc tính
+Hệ thống tính lương
+
+Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
+Trách nhiệm : Kích hoạt quá trình tính lương, xử lý tiền lương cho nhân viên, quản lý các luồng thay thế.
+Người lao động
+
+Thuộc tính :
+employeeId: String
+name: String
+salaryType: String(theo giờ, theo lương, theo hoa hồng)
+salary: Decimal
+deductions: List<String>
+payMethod: String(thư, nhận tại chỗ, gửi tiền trực tiếp)
+status: String(đang hoạt động, được đánh dấu để xóa)
+Trách nhiệm : Đại diện cho nhân viên và lưu trữ thông tin liên quan đến bảng lương.
+Thẻ thời gian
+
+Thuộc tính :
+employeeId: String
+hoursWorked: Decimal
+date: Date
+Trách nhiệm : Theo dõi số giờ làm việc của nhân viên theo giờ.
+Đơn đặt hàng
+
+Thuộc tính :
+employeeId: String
+orderAmount: Decimal
+date: Date
+Trách nhiệm : Đại diện cho các đơn đặt hàng đóng góp vào thu nhập của nhân viên được trả lương.
+Giao dịch ngân hàng
+
+Thuộc tính :
+transactionId: String
+amount: Decimal
+accountNumber: String
+employeeId: String
+Trách nhiệm : Thể hiện dữ liệu cần thiết cho giao dịch gửi tiền trực tiếp.
+Hệ thống Ngân hàng
+
+Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
+Trách nhiệm : Xử lý các giao dịch gửi tiền trực tiếp.
+Dịch vụ tính lương
+
+Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
+Trách nhiệm : Tính lương, khấu trừ, tạo phiếu lương hoặc giao dịch ngân hàng.
+Cơ sở dữ liệu
+
+Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
+Trách nhiệm : Lưu trữ và truy xuất hồ sơ nhân viên, thẻ chấm công và lệnh mua hàng.
+  
