@@ -336,12 +336,12 @@ Dựa trên mô tả, các lớp chính liên quan đến trường hợp sử d
 
 ***Code mô phỏng***
 
- import java.util.*;
- // Lớp đại diện cho một timecard
-class Timecard {
-    private String employeeId;
-    private Date date;
-    private double hoursWorked;
+       import java.util.*;</p>
+       // Lớp đại diện cho một timecard
+      class Timecard {
+          private String employeeId;
+          private Date date;
+          private double hoursWorked;
 
     public Timecard(String employeeId, Date date, double hoursWorked) {
         this.employeeId = employeeId;
