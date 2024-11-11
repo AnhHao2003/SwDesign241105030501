@@ -261,65 +261,75 @@ Dựa trên trường hợp sử dụng, các lớp phân tích chính là:
 
 ## VI. Ca sử dụng cho 'Run Payroll'
 
-Bước 1: Xác định các lớp phân tích
+**1. Xác định các lớp phân tích**
 Dựa trên mô tả, các lớp chính liên quan đến trường hợp sử dụng này là:
 
-PayrollSystem - Quản lý toàn bộ quy trình tính lương và kích hoạt chạy bảng lương.
-Nhân viên - Đại diện cho mỗi nhân viên được trả lương.
-TimeCard - Lưu trữ số giờ làm việc của nhân viên theo giờ.
-PurchaseOrder - Biểu thị lệnh mua hàng cho nhân viên hưởng lương, đóng góp vào tiền lương của họ.
-BankTransaction - Biểu thị dữ liệu giao dịch được gửi đến Hệ thống Ngân hàng để thanh toán gửi tiền trực tiếp.
-BankSystem - Đại diện cho hệ thống bên ngoài để xử lý các giao dịch ngân hàng.
-PayrollService - Xử lý tính toán bảng lương và thanh toán.
-Cơ sở dữ liệu - Lưu trữ dữ liệu nhân viên và quản lý các hoạt động truy xuất và xóa.
-Bước 2: Xác định trách nhiệm và thuộc tính
-Hệ thống tính lương
+*PayrollSystem* - Quản lý toàn bộ quy trình tính lương và kích hoạt chạy bảng lương.
+*Nhân viên* - Đại diện cho mỗi nhân viên được trả lương.
+*TimeCard* - Lưu trữ số giờ làm việc của nhân viên theo giờ.
+*PurchaseOrder* - Biểu thị lệnh mua hàng cho nhân viên hưởng lương, đóng góp vào tiền lương của họ.
+*BankTransaction* - Biểu thị dữ liệu giao dịch được gửi đến Hệ thống Ngân hàng để thanh toán gửi tiền trực tiếp.
+*BankSystem* - Đại diện cho hệ thống bên ngoài để xử lý các giao dịch ngân hàng.
+*PayrollService* - Xử lý tính toán bảng lương và thanh toán.
+*Cơ sở dữ liệu* - Lưu trữ dữ liệu nhân viên và quản lý các hoạt động truy xuất và xóa.
 
-Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
-Trách nhiệm : Kích hoạt quá trình tính lương, xử lý tiền lương cho nhân viên, quản lý các luồng thay thế.
-Người lao động
+**2. Xác định trách nhiệm và thuộc tính**
+> Hệ thống tính lương
 
-Thuộc tính :
-employeeId: String
-name: String
-salaryType: String(theo giờ, theo lương, theo hoa hồng)
-salary: Decimal
-deductions: List<String>
-payMethod: String(thư, nhận tại chỗ, gửi tiền trực tiếp)
-status: String(đang hoạt động, được đánh dấu để xóa)
-Trách nhiệm : Đại diện cho nhân viên và lưu trữ thông tin liên quan đến bảng lương.
-Thẻ thời gian
+* Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
+* Trách nhiệm : Kích hoạt quá trình tính lương, xử lý tiền lương cho nhân viên, quản lý các luồng thay thế.
+> Người lao động
 
-Thuộc tính :
-employeeId: String
-hoursWorked: Decimal
-date: Date
-Trách nhiệm : Theo dõi số giờ làm việc của nhân viên theo giờ.
-Đơn đặt hàng
-
-Thuộc tính :
-employeeId: String
-orderAmount: Decimal
-date: Date
-Trách nhiệm : Đại diện cho các đơn đặt hàng đóng góp vào thu nhập của nhân viên được trả lương.
-Giao dịch ngân hàng
-
-Thuộc tính :
-transactionId: String
-amount: Decimal
-accountNumber: String
-employeeId: String
-Trách nhiệm : Thể hiện dữ liệu cần thiết cho giao dịch gửi tiền trực tiếp.
-Hệ thống Ngân hàng
-
-Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
-Trách nhiệm : Xử lý các giao dịch gửi tiền trực tiếp.
-Dịch vụ tính lương
-
-Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
-Trách nhiệm : Tính lương, khấu trừ, tạo phiếu lương hoặc giao dịch ngân hàng.
-Cơ sở dữ liệu
-
-Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
-Trách nhiệm : Lưu trữ và truy xuất hồ sơ nhân viên, thẻ chấm công và lệnh mua hàng.
+* Thuộc tính :
   
+        -  employeeId: String
+        -  name: String
+        -  salaryType: String(theo giờ, theo lương, theo hoa hồng)
+        -  salary: Decimal
+        -  deductions: List<String>
+        -  payMethod: String(thư, nhận tại chỗ, gửi tiền trực tiếp)
+        -  status: String(đang hoạt động, được đánh dấu để xóa)
+* Trách nhiệm : Đại diện cho nhân viên và lưu trữ thông tin liên quan đến bảng lương.
+> Thẻ thời gian
+
+* Thuộc tính :
+  
+        -  employeeId: String
+        -  hoursWorked: Decimal
+        -  date: Date
+* Trách nhiệm : Theo dõi số giờ làm việc của nhân viên theo giờ.
+> Đơn đặt hàng
+
+* Thuộc tính :
+  
+        - employeeId: String
+        - orderAmount: Decimal
+        - date: Date
+* Trách nhiệm : Đại diện cho các đơn đặt hàng đóng góp vào thu nhập của nhân viên được trả lương.
+> Giao dịch ngân hàng
+
+* Thuộc tính :
+  
+        - transactionId: String
+        - amount: Decimal
+        - accountNumber: String
+        - employeeId: String
+* Trách nhiệm : Thể hiện dữ liệu cần thiết cho giao dịch gửi tiền trực tiếp.
+> Hệ thống Ngân hàng
+
+* Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
+* Trách nhiệm : Xử lý các giao dịch gửi tiền trực tiếp.
+> Dịch vụ tính lương
+
+
+* Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
+* Trách nhiệm : Tính lương, khấu trừ, tạo phiếu lương hoặc giao dịch ngân hàng.
+> Cơ sở dữ liệu
+
+* Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
+* Trách nhiệm : Lưu trữ và truy xuất hồ sơ nhân viên, thẻ chấm công và lệnh mua hàng.
+  **3. Biểu đồ tuần tự**
+  ![Diagram](https://www.planttext.com/api/plantuml/png/Z5N1QXfH5DtFLzobWVO714keWQGGt2Z1xSmeli7npSHv8t5Pid3HHHkwAAMKneeKqaeIMYZCexXunVzuNz1VwBtlZMOcAgsWmhppphdtt7FrZrmU9i8TYdGGEguleY6SQ3bfCIslU0_S199nuiG82FmWThae7hS2BL_oqzNTQcgnSHbwfEKhdvrfETz6Dhl3KGbSNqsRMdx2ExUdY9wa1Eju9Ko3gS_yB50td0wxWxXq-bndCzwhCvtD1tNrmme9luJv_GOhE57NUHLHwV0uS2DRSwE7GXkO9_Ovy0YNE4wj1bJ1T0osPrWtNQivQ2KyVOOkGPMAlSLohdJs9ONpL4r13DKtpa3OQs5-hT9N2vy1Yv1JWD3odYx9zxntuCI6hkCXNMkOZk4YnTO5S789HiOcdqN0U-fwZFHepuQMaSKS-R9fu233kgmZ5qj8r1Gb2pIcBPpZXm06MhuBIXBOc2q4vu4CRIqN4AfVZninbHGeznJVmVb3Q0DGLAcCr88EvzKrunFmiKxeapKpZjzuFwKsvTUzrXJPRLp0vWLiO2fSPqiaKGkQ1Ej6q4FmnuFS8k4RFZ9oXCtzY-v_gZ2111kXaZgBNC2GlQL1vmEAzgiNQ79Lis5qmR3jcuBZXW9QZAOk8eKKvwcBZQ_kJE9--WZMsO8RM-zzcccsZ1t0b-LVvwQ5GOeWPe7f85UpE5CDHRyAB_WMf1ictQq2V9QEjRpaw-6M1Jsn4ToriGLLZqIFCP01pj6Do364cgrRyjrxR6wJARktd58sCpdCeVJo7jQwJP7CFIj86gXfTH-jYTzEzlY1dIxYSj7IbXgYgUPDzLc0yqDIV6eoQ9Hvnw4thN7JJIsez7j033jNcwne51vvg8XQE2c6whHnz7Dq2HVgkrjmtcI-ZSzAVDYVV1rGh2TOf371r7M87_G7z1S00F__0m00)
+
+  **4. Biểu đồ lớp**
+  ![Diagram](https://www.planttext.com/api/plantuml/png/b5NDQjj04BxhAUOOG_m2ffXG1nA8yIN6zAfkZ5PKMXbhPMnA3wM777ffwBdKgicXBIOfxSbBo663tqDFq5Veh2nh9Qzafxx4cPzlllbcTlnNF9w4t1xpoFSiujbX2EU9kExJHDmmf-ycuZthhk_NCNFWhGNfXz1a5SzAlgE6zSxAydjKVcC3L_vWMKOJVBaeM5jmoSSkSp8dhx1v0PPmjuLtdRdvT4XSt_OoEv4nkQ2OkM0NIF4sweyJyHF3kcx8NsmWsbdiY6v0LAFVIP_QZFO36PlanaX4XSdOBVi0YIyPhH3WfMBWT1G5loF_vCeTq254oSzGr2zTEVS7-EMQ62qoHyvdochpeIxuz0afdClv_rJQZA-G-RnIPwuTd2RY8w4z1-6DejfVNzGebRhatCs6jvjPqqlEgR2m1Yc0QIAMNVcWYHszvWXIrKXXXXlN816trM-WD7isGK1DyHYucfon1iSm2j2kDM_iA96JrVjeObVfM23UMSUNYVYA_E-wQeSYJNaSpLv5o8Phk0uDUchE-59MYtoLjqz6nxKp30_JPnfR1nnL3wbH8byDOkYq1okbPIJKiDD27qBKaLkegVnj7-vEoLvxBflDTkqQjTGObt253loFq20zNi2e8kx31Et0DqFEhjt-EkRKM-cyOPeE72Po3YHPBKTO0lzmGA3F4AvZguwXGYsrd6vypcPVMkMDG02yf04uw5Hzgmj1Q3HBn0S6RxA7ZzTM_2AgyzNZoAh4KGMg7tmB7DJKXQSRn4nV4dZomJAbCLh3fgAqzbrDj7dHdv5Kkgs5w9CXkrA_jly0003__mC0)
