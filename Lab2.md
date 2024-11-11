@@ -338,7 +338,7 @@ Dựa trên mô tả, các lớp chính liên quan đến trường hợp sử d
 
 > import java.util.*;
 
-// Lớp đại diện cho một timecard
+// Lớp đại diện cho một timecard </p>
 class Timecard {
     private String employeeId;
     private Date date;
@@ -376,7 +376,7 @@ class Timecard {
     }
 }
 
-// Lớp giả lập cơ sở dữ liệu để lưu trữ thông tin các timecard
+// Lớp giả lập cơ sở dữ liệu để lưu trữ thông tin các timecard</p>
 class Database {
     private List<Timecard> timecards = new ArrayList<>();
 
@@ -416,13 +416,13 @@ class Database {
 class TimecardSystem {
     private Database database = new Database();
 
-    // Thêm một timecard
+    // Thêm một timecard </p>
     public void createTimecard(String employeeId, Date date, double hoursWorked) {
         Timecard timecard = new Timecard(employeeId, date, hoursWorked);
         database.addTimecard(timecard);
     }
 
-    // Cập nhật một timecard dựa trên employeeId và date
+    // Cập nhật một timecard dựa trên employeeId và date</p>
     public void updateTimecard(String employeeId, Date date, double hoursWorked) {
         Timecard timecard = database.findTimecard(employeeId, date);
         if (timecard != null) {
@@ -447,7 +447,7 @@ class TimecardSystem {
     }
 }
 
-// Lớp thử nghiệm để mô phỏng các thao tác Maintain Timecard
+// Lớp thử nghiệm để mô phỏng các thao tác Maintain Timecard</p>
 public class Main {
     public static void main(String[] args) {
         TimecardSystem timecardSystem = new TimecardSystem();
