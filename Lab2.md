@@ -336,101 +336,138 @@ Dựa trên mô tả, các lớp chính liên quan đến trường hợp sử d
 
 ***Code mô phỏng***
 
-> import java.util.*;</p>
-class Timecard {</p>
-    private String employeeId;</p>
-    private Date date;</p>
-    private double hoursWorked;</p>
-    public Timecard(String employeeId, Date date, double hoursWorked) {</p>
-        this.employeeId = employeeId;</p>
-        this.date = date;</p>
-        this.hoursWorked = hoursWorked;</p>
+> import java.util.*;
+
+> // Lớp đại diện cho một timecard
+class Timecard {
+    private String employeeId;
+    private Date date;
+    private double hoursWorked;
+
+    public Timecard(String employeeId, Date date, double hoursWorked) {
+        this.employeeId = employeeId;
+        this.date = date;
+        this.hoursWorked = hoursWorked;
     }
-    public String getEmployeeId() {</p>
-        return employeeId;</p>
+
+    public String getEmployeeId() {
+        return employeeId;
     }
-    public Date getDate() {</p>
-        return date;</p>
-    }</p>
-    public double getHoursWorked() {</p>
-        return hoursWorked;</p>
-    }</p>
-    public void setHoursWorked(double hoursWorked) {</p>
-        this.hoursWorked = hoursWorked;</p>
+
+    public Date getDate() {
+        return date;
     }
-    @Override</p>
-    public String toString() {</p>
-        return "Timecard{" +</p>
-                "employeeId='" + employeeId + '\'' +</p>
-                ", date=" + date +</p>
-                ", hoursWorked=" + hoursWorked +</p>
-                '}';</p>
+
+    public double getHoursWorked() {
+        return hoursWorked;
     }
-}
-class Database {</p>
-    private List<Timecard> timecards = new ArrayList<>();</p>
-    public void addTimecard(Timecard timecard) {</p>
-        timecards.add(timecard);</p>
-        System.out.println("Timecard added: " + timecard);</p>
-    }</p>
-    public Timecard findTimecard(String employeeId, Date date) {</p>
-        for (Timecard timecard : timecards) {</p>
-            if (timecard.getEmployeeId().equals(employeeId) && timecard.getDate().equals(date)) {</p>
-                return timecard;</p>
-            }</p>
-        }</p>
-        return null;</p>
+
+    public void setHoursWorked(double hoursWorked) {
+        this.hoursWorked = hoursWorked;
     }
-    public void updateTimecard(Timecard timecard, double hoursWorked) {</p>
-        timecard.setHoursWorked(hoursWorked);</p>
-        System.out.println("Timecard updated: " + timecard);</p>
-    }
-    public void deleteTimecard(Timecard timecard) {</p>
-        timecards.remove(timecard);</p>
-        System.out.println("Timecard deleted: " + timecard);</p>
-    }</p>
-    public void displayAllTimecards() {</p>
-        System.out.println("All Timecards:");</p>
-        for (Timecard timecard : timecards) {</p>
-            System.out.println(timecard);</p>
-        }</p>
-    }</p>
-}</p>
-class TimecardSystem {</p>
-    private Database database = new Database();</p>
-    public void createTimecard(String employeeId, Date date, double hoursWorked) {</p>
-        Timecard timecard = new Timecard(employeeId, date, hoursWorked);</p>
-        database.addTimecard(timecard);</p>
-    }</p>
-    public void updateTimecard(String employeeId, Date date, double hoursWorked) {</p>
-        Timecard timecard = database.findTimecard(employeeId, date);</p>
-        if (timecard != null) {</p>
-            database.updateTimecard(timecard, hoursWorked);</p>
-        } else {</p>
-            System.out.println("Timecard not found for employeeId: " + employeeId + " on date: " + date);</p>
-        }</p>
-    }</p>
-    public void deleteTimecard(String employeeId, Date date) {</p>
-        Timecard timecard = database.findTimecard(employeeId, date);</p>
-        if (timecard != null) {</p>
-            database.deleteTimecard(timecard);</p>
-        } else {</p>
-            System.out.println("Timecard not found for employeeId: " + employeeId + " on date: " + date);</p>
-        }</p>
-    }</p>
-    public void displayTimecards() {</p>
-        database.displayAllTimecards();</p>
+
+    @Override
+    public String toString() {
+        return "Timecard{" +
+                "employeeId='" + employeeId + '\'' +
+                ", date=" + date +
+                ", hoursWorked=" + hoursWorked +
+                '}';
     }
 }
-    public class Main {</p>
-      public static void main(String[] args) {</p>
-        TimecardSystem timecardSystem = new TimecardSystem();</p>
-        Date today = new Date();</p>
-        timecardSystem.createTimecard("EMP001", today, 8);</p>
-        timecardSystem.createTimecard("EMP002", today, 7.5);</p>
-        timecardSystem.displayTimecards();</p>
-        timecardSystem.updateTimecard("EMP001", today, 9);</p>
-        timecardSystem.deleteTimecard("EMP002", today);</p>
-        timecardSystem.displayTimecards();</p>
+
+> // Lớp giả lập cơ sở dữ liệu để lưu trữ thông tin các timecard
+class Database {
+    private List<Timecard> timecards = new ArrayList<>();
+
+    public void addTimecard(Timecard timecard) {
+        timecards.add(timecard);
+        System.out.println("Timecard added: " + timecard);
+    }
+
+    public Timecard findTimecard(String employeeId, Date date) {
+        for (Timecard timecard : timecards) {
+            if (timecard.getEmployeeId().equals(employeeId) && timecard.getDate().equals(date)) {
+                return timecard;
+            }
+        }
+        return null;
+    }
+
+    public void updateTimecard(Timecard timecard, double hoursWorked) {
+        timecard.setHoursWorked(hoursWorked);
+        System.out.println("Timecard updated: " + timecard);
+    }
+
+    public void deleteTimecard(Timecard timecard) {
+        timecards.remove(timecard);
+        System.out.println("Timecard deleted: " + timecard);
+    }
+
+    public void displayAllTimecards() {
+        System.out.println("All Timecards:");
+        for (Timecard timecard : timecards) {
+            System.out.println(timecard);
+        }
+    }
+}
+
+> // Lớp chính xử lý các thao tác Maintain Timecard
+class TimecardSystem {
+    private Database database = new Database();
+
+ >   // Thêm một timecard
+    public void createTimecard(String employeeId, Date date, double hoursWorked) {
+        Timecard timecard = new Timecard(employeeId, date, hoursWorked);
+        database.addTimecard(timecard);
+    }
+
+ >   // Cập nhật một timecard dựa trên employeeId và date
+    public void updateTimecard(String employeeId, Date date, double hoursWorked) {
+        Timecard timecard = database.findTimecard(employeeId, date);
+        if (timecard != null) {
+            database.updateTimecard(timecard, hoursWorked);
+        } else {
+            System.out.println("Timecard not found for employeeId: " + employeeId + " on date: " + date);
+        }
+    }
+
+   >  // Xóa một timecard
+    public void deleteTimecard(String employeeId, Date date) {
+        Timecard timecard = database.findTimecard(employeeId, date);
+        if (timecard != null) {
+            database.deleteTimecard(timecard);
+        } else {
+            System.out.println("Timecard not found for employeeId: " + employeeId + " on date: " + date);
+        }
+    }
+
+    public void displayTimecards() {
+        database.displayAllTimecards();
+    }
+}
+
+> // Lớp thử nghiệm để mô phỏng các thao tác Maintain Timecard
+> public class Main {
+    public static void main(String[] args) {
+        TimecardSystem timecardSystem = new TimecardSystem();
+        Date today = new Date();
+
+        // Thêm timecard
+        timecardSystem.createTimecard("EMP001", today, 8);
+        timecardSystem.createTimecard("EMP002", today, 7.5);
+
+        // Hiển thị tất cả các timecard
+        timecardSystem.displayTimecards();
+
+        // Cập nhật timecard
+        timecardSystem.updateTimecard("EMP001", today, 9);
+
+        // Xóa timecard
+        timecardSystem.deleteTimecard("EMP002", today);
+
+        // Hiển thị tất cả các timecard sau khi cập nhật và xóa
+        timecardSystem.displayTimecards();
     }
 > }
+
