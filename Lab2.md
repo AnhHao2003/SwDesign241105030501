@@ -373,6 +373,7 @@ class Timecard {
                 '}';
     }
 }
+
 // Lớp giả lập cơ sở dữ liệu để lưu trữ thông tin các timecard
 class Database {
     private List<Timecard> timecards = new ArrayList<>();
