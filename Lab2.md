@@ -166,9 +166,9 @@ Từ trường hợp sử dụng "Đăng nhập", các lớp phân tích cần t
 Dựa trên trường hợp sử dụng, các lớp phân tích chính là:
 
 *PayrollAdministrator* - Đại diện cho tác nhân thực hiện các thao tác trên dữ liệu nhân viên.</p>
-*Hệ thống* - Quản lý tương tác và luồng chung để duy trì thông tin nhân viên.
-*Nhân viên* - Biểu thị thực thể nhân viên có thông tin chi tiết cần thêm, cập nhật hoặc xóa.
-*EmployeeService* - Xử lý các hoạt động thực tế (thêm, cập nhật, xóa) trên dữ liệu nhân viên.
+*Hệ thống* - Quản lý tương tác và luồng chung để duy trì thông tin nhân viên.</p>
+*Nhân viên* - Biểu thị thực thể nhân viên có thông tin chi tiết cần thêm, cập nhật hoặc xóa.</p>
+*EmployeeService* - Xử lý các hoạt động thực tế (thêm, cập nhật, xóa) trên dữ liệu nhân viên.</p>
 *Cơ sở dữ liệu* - Lưu trữ hồ sơ nhân viên và xử lý việc truy xuất và xóa.</p>
 **2.Xác định trách nhiệm và thuộc tính**
 > Quản trị viên tiền lương
@@ -217,11 +217,11 @@ Dựa trên trường hợp sử dụng, các lớp phân tích chính là:
 
 Dựa trên trường hợp sử dụng, các lớp phân tích chính là:
 
-*CommissionedEmployee* - Đại diện cho tác nhân thực hiện các thao tác trên đơn đặt hàng mua.
-*Hệ thống* - Quản lý tương tác và luồng xử lý để duy trì đơn đặt hàng mua.
-*PurchaseOrder* - Biểu thị thực thể đơn đặt hàng mua cần được tạo, cập nhật hoặc xóa.
-*PurchaseOrderService* - Xử lý các hoạt động thực tế (tạo, cập nhật, xóa) trên dữ liệu đơn đặt hàng.
-*Cơ sở dữ liệu* - Lưu trữ hồ sơ đơn đặt hàng và xử lý việc truy xuất và xóa.
+*CommissionedEmployee* - Đại diện cho tác nhân thực hiện các thao tác trên đơn đặt hàng mua.</p>
+*Hệ thống* - Quản lý tương tác và luồng xử lý để duy trì đơn đặt hàng mua.</p>
+*PurchaseOrder* - Biểu thị thực thể đơn đặt hàng mua cần được tạo, cập nhật hoặc xóa.</p>
+*PurchaseOrderService* - Xử lý các hoạt động thực tế (tạo, cập nhật, xóa) trên dữ liệu đơn đặt hàng.</p>
+*Cơ sở dữ liệu* - Lưu trữ hồ sơ đơn đặt hàng và xử lý việc truy xuất và xóa.</p>
 
 **2.Xác định trách nhiệm và thuộc tính**
 > Nhân viên được ủy quyền
@@ -264,14 +264,14 @@ Dựa trên trường hợp sử dụng, các lớp phân tích chính là:
 **1. Xác định các lớp phân tích**
 Dựa trên mô tả, các lớp chính liên quan đến trường hợp sử dụng này là:
 
-*PayrollSystem* - Quản lý toàn bộ quy trình tính lương và kích hoạt chạy bảng lương.
-*Nhân viên* - Đại diện cho mỗi nhân viên được trả lương.
-*TimeCard* - Lưu trữ số giờ làm việc của nhân viên theo giờ.
-*PurchaseOrder* - Biểu thị lệnh mua hàng cho nhân viên hưởng lương, đóng góp vào tiền lương của họ.
-*BankTransaction* - Biểu thị dữ liệu giao dịch được gửi đến Hệ thống Ngân hàng để thanh toán gửi tiền trực tiếp.
-*BankSystem* - Đại diện cho hệ thống bên ngoài để xử lý các giao dịch ngân hàng.
-*PayrollService* - Xử lý tính toán bảng lương và thanh toán.
-*Cơ sở dữ liệu* - Lưu trữ dữ liệu nhân viên và quản lý các hoạt động truy xuất và xóa.
+*PayrollSystem* - Quản lý toàn bộ quy trình tính lương và kích hoạt chạy bảng lương.</p>
+*Nhân viên* - Đại diện cho mỗi nhân viên được trả lương.</p>
+*TimeCard* - Lưu trữ số giờ làm việc của nhân viên theo giờ.</p>
+*PurchaseOrder* - Biểu thị lệnh mua hàng cho nhân viên hưởng lương, đóng góp vào tiền lương của họ.</p>
+*BankTransaction* - Biểu thị dữ liệu giao dịch được gửi đến Hệ thống Ngân hàng để thanh toán gửi tiền trực tiếp.</p>
+*BankSystem* - Đại diện cho hệ thống bên ngoài để xử lý các giao dịch ngân hàng.</p>
+*PayrollService* - Xử lý tính toán bảng lương và thanh toán.</p>
+*Cơ sở dữ liệu* - Lưu trữ dữ liệu nhân viên và quản lý các hoạt động truy xuất và xóa.</p>
 
 **2. Xác định trách nhiệm và thuộc tính**
 > Hệ thống tính lương
