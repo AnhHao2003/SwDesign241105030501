@@ -337,8 +337,6 @@ Dựa trên mô tả, các lớp chính liên quan đến trường hợp sử d
 ***Code mô phỏng***
 
 > import java.util.*;
-
-// Lớp đại diện cho một timecard </p>
 class Timecard {
     private String employeeId;
     private Date date;
@@ -375,8 +373,6 @@ class Timecard {
                 '}';
     }
 }
-
-// Lớp giả lập cơ sở dữ liệu để lưu trữ thông tin các timecard</p>
 class Database {
     private List<Timecard> timecards = new ArrayList<>();
 
@@ -411,18 +407,12 @@ class Database {
         }
     }
 }
-
-// Lớp chính xử lý các thao tác Maintain Timecard
 class TimecardSystem {
     private Database database = new Database();
-
-    // Thêm một timecard </p>
     public void createTimecard(String employeeId, Date date, double hoursWorked) {
         Timecard timecard = new Timecard(employeeId, date, hoursWorked);
         database.addTimecard(timecard);
     }
-
-    // Cập nhật một timecard dựa trên employeeId và date</p>
     public void updateTimecard(String employeeId, Date date, double hoursWorked) {
         Timecard timecard = database.findTimecard(employeeId, date);
         if (timecard != null) {
@@ -431,8 +421,6 @@ class TimecardSystem {
             System.out.println("Timecard not found for employeeId: " + employeeId + " on date: " + date);
         }
     }
-
-    // Xóa một timecard
     public void deleteTimecard(String employeeId, Date date) {
         Timecard timecard = database.findTimecard(employeeId, date);
         if (timecard != null) {
@@ -446,27 +434,18 @@ class TimecardSystem {
         database.displayAllTimecards();
     }
 }
-
-// Lớp thử nghiệm để mô phỏng các thao tác Maintain Timecard</p>
-public class Main {
-    public static void main(String[] args) {
+    public class Main {
+      public static void main(String[] args) {
         TimecardSystem timecardSystem = new TimecardSystem();
         Date today = new Date();
 
-        // Thêm timecard
         timecardSystem.createTimecard("EMP001", today, 8);
         timecardSystem.createTimecard("EMP002", today, 7.5);
 
-        // Hiển thị tất cả các timecard
         timecardSystem.displayTimecards();
-
-        // Cập nhật timecard
         timecardSystem.updateTimecard("EMP001", today, 9);
 
-        // Xóa timecard
         timecardSystem.deleteTimecard("EMP002", today);
-
-        // Hiển thị tất cả các timecard sau khi cập nhật và xóa
         timecardSystem.displayTimecards();
     }
 > }
