@@ -122,3 +122,41 @@ Từ mô tả, các lớp phân tích chính như sau:
 
 **Bước 4: Biểu đồ lớp**
 ![Diagram](https://www.planttext.com/api/plantuml/png/X5J1IkH04BtdA_he7iOFo64HPmw2mx2BGVOwH4atn9vnfdinY8V5WmTPs3ak8Xf51Dt1sPEGPl7GG_wZlc1_OQjZfkr9ps8W4EfLTxrwhof_rSl6MFH7GXwaGPpsnsFIe_g6xpBzmCbnGF1faGDzwqH3iYD6Z2SrABmO8Pb-a6qexkMcpWTjVDS-r4WiUOB8tJ1Y9eVgwHj4GNtdEw0cRSe-kSYXpA1u4VCVeCuvxPOpYT19K1FU0dKMuTa9Jsh6X0Weye5NtDBoYn_fFEvHAARSnyH8PbyaaXQho546wfGR0kTUmHIfRWsWU8wHv7tcu9Rz8kQARMCDgLEyAcVDA0VratLGLmz8z7KM6IKGwVJ5lYjERt5gLICkGQk7n_ILpl_8LjKteNWolg7cBeSQtJQkHbGNyJ8uVfEvELdp2QefN8yiqNQPepzN7L1FNMpbJ7v6psvvL__1q6_zZTlfID7BRDdBaqMt8_sBKtiomdk6jk7vf9o1kkH91uh7bOlmcj_WRAPWsNfdcrgjZqiJ719HpieSlmIE9FaAwe85Re8vu7iI6j6cP0_K7TPjvZjfbVbUmllQXTKQaADg3og7S64P6I89dzug4KEIu7upuw0whJG9BAtrzNTx8iBWM1FhRUppFVF3-WS00F__0m00)
+
+## III. Ca Sử Dụng "Login"
+
+**1. Xác định các lớp phân tích**
+
+Từ trường hợp sử dụng "Đăng nhập", các lớp phân tích cần thiết là:
+
+*Người dùng* - Đại diện cho tác nhân đang cố gắng đăng nhập vào hệ thống.</p>
+*Hệ thống** - Quản lý quy trình đăng nhập, xác thực thông tin người dùng và cung cấp phản hồi về thành công hay thất bại.</p>
+*AuthenticationService* - Xử lý việc xác thực thông tin đăng nhập của người dùng.</p>
+**2. Xác định trách nhiệm và thuộc tính**
+
+> Người sử dụng
+
+* Thuộc tính :
+  
+         - username,
+         - password
+* Trách nhiệm : Bắt đầu quá trình đăng nhập bằng cách nhập tên người dùng và mật khẩu.</p>
+
+> Hệ thống
+
+* Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.</p>
+* Trách nhiệm : Yêu cầu thông tin đăng nhập, tương tác AuthenticationServiceđể xác thực thông tin đăng nhập, đăng nhập người dùng khi thành công và hiển thị thông báo lỗi khi không thành công.</p>
+> Dịch vụ xác thực
+
+* Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.</p>
+* Trách nhiệm : Xác minh tên người dùng và mật khẩu đã nhập và trả về phản hồi thành công hoặc thất bại cho System.</p>
+
+**3. Biểu đồ trình tự**
+
+![Diagram](https://www.planttext.com/api/plantuml/png/Z58_IyD05D_lKxnHGRz08TAXGwU24CGrlOHUQ7e9oKlHkOD35piv2GrIHB6W88YvmU62t-C-WL_1Tud1fYxUS1pl_VwyF_UbFlePUYdciuXv7ECKHfFFPwDkmu5-bnFmCf0-ImWHyZ3n9CBGg2jN6BLgiW8xsO5HIoxEZDgSwu9Rt0ktC7z-WOmv3fpckW0trKzIG7LTBKXb94ovJS1ncFJX-8GaeTS6KJzAg5OrJZQXkLx3Z5u8Kmeyv8pmnB8EnBEsW8ql2lrAF0mb7FmLEkge738lGd1_6IHnbq14tJAWKyktnUsPhAaNReariYc7Mkcr3VuKta46KHRisasRv_zTJRb169ko2FTTXw5H2raZb-qCnhg8hUnDWzuPjDtHbb8a128svHktHTnVie0MtwVBVerl0000__y30000)
+
+**4.Biểu đồ lớp**
+
+![Diagram](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bToJc9niO9VUcb-fajfNhf2DPS24EWgbAJckIJcfVjb91OeM2a4bnHbvgL3fN8JIxmp4ajHXHKKye1AGpBoyz93Ck5QDJIvQhcWTdYaWcMXDYWeP6IcveLaP28fXOXN92Q7P9GcOuX3rOCDSKhCzydFX4kbGDN2lO5ihqjcSaPOQGJ4LBZjK5jW3jR0vbyT3Azg0bb9-VavgObv80iGmQQhQmVte9L2oR4DnnO2MIM75oOhb3tSFJkJ2oO9KeZg8Yk5ueUxrogaFDoz52X_PEB3tSqA5I2D9HaFTszCvd98pKi1nHG0003__mC0)
+
+
