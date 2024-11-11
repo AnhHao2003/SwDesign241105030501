@@ -341,29 +341,23 @@ class Timecard {
     private String employeeId;
     private Date date;
     private double hoursWorked;
-
     public Timecard(String employeeId, Date date, double hoursWorked) {
         this.employeeId = employeeId;
         this.date = date;
         this.hoursWorked = hoursWorked;
     }
-
     public String getEmployeeId() {
         return employeeId;
     }
-
     public Date getDate() {
         return date;
     }
-
     public double getHoursWorked() {
         return hoursWorked;
     }
-
     public void setHoursWorked(double hoursWorked) {
         this.hoursWorked = hoursWorked;
     }
-
     @Override
     public String toString() {
         return "Timecard{" +
@@ -375,12 +369,10 @@ class Timecard {
 }
 class Database {
     private List<Timecard> timecards = new ArrayList<>();
-
     public void addTimecard(Timecard timecard) {
         timecards.add(timecard);
         System.out.println("Timecard added: " + timecard);
     }
-
     public Timecard findTimecard(String employeeId, Date date) {
         for (Timecard timecard : timecards) {
             if (timecard.getEmployeeId().equals(employeeId) && timecard.getDate().equals(date)) {
@@ -389,17 +381,14 @@ class Database {
         }
         return null;
     }
-
     public void updateTimecard(Timecard timecard, double hoursWorked) {
         timecard.setHoursWorked(hoursWorked);
         System.out.println("Timecard updated: " + timecard);
     }
-
     public void deleteTimecard(Timecard timecard) {
         timecards.remove(timecard);
         System.out.println("Timecard deleted: " + timecard);
     }
-
     public void displayAllTimecards() {
         System.out.println("All Timecards:");
         for (Timecard timecard : timecards) {
@@ -429,7 +418,6 @@ class TimecardSystem {
             System.out.println("Timecard not found for employeeId: " + employeeId + " on date: " + date);
         }
     }
-
     public void displayTimecards() {
         database.displayAllTimecards();
     }
@@ -438,13 +426,10 @@ class TimecardSystem {
       public static void main(String[] args) {
         TimecardSystem timecardSystem = new TimecardSystem();
         Date today = new Date();
-
         timecardSystem.createTimecard("EMP001", today, 8);
         timecardSystem.createTimecard("EMP002", today, 7.5);
-
         timecardSystem.displayTimecards();
         timecardSystem.updateTimecard("EMP001", today, 9);
-
         timecardSystem.deleteTimecard("EMP002", today);
         timecardSystem.displayTimecards();
     }
