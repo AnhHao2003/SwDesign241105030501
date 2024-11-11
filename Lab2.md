@@ -159,4 +159,55 @@ Từ trường hợp sử dụng "Đăng nhập", các lớp phân tích cần t
 
 ![Diagram](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bToJc9niO9VUcb-fajfNhf2DPS24EWgbAJckIJcfVjb91OeM2a4bnHbvgL3fN8JIxmp4ajHXHKKye1AGpBoyz93Ck5QDJIvQhcWTdYaWcMXDYWeP6IcveLaP28fXOXN92Q7P9GcOuX3rOCDSKhCzydFX4kbGDN2lO5ihqjcSaPOQGJ4LBZjK5jW3jR0vbyT3Azg0bb9-VavgObv80iGmQQhQmVte9L2oR4DnnO2MIM75oOhb3tSFJkJ2oO9KeZg8Yk5ueUxrogaFDoz52X_PEB3tSqA5I2D9HaFTszCvd98pKi1nHG0003__mC0)
 
+# IV. Ca sử dụng cho 'Maintain Employee Information'
+
+**1. Xác định các lớp phân tích**
+
+Dựa trên trường hợp sử dụng, các lớp phân tích chính là:
+
+*PayrollAdministrator* - Đại diện cho tác nhân thực hiện các thao tác trên dữ liệu nhân viên.</p>
+*Hệ thống* - Quản lý tương tác và luồng chung để duy trì thông tin nhân viên.
+*Nhân viên* - Biểu thị thực thể nhân viên có thông tin chi tiết cần thêm, cập nhật hoặc xóa.
+*EmployeeService* - Xử lý các hoạt động thực tế (thêm, cập nhật, xóa) trên dữ liệu nhân viên.
+*Cơ sở dữ liệu* - Lưu trữ hồ sơ nhân viên và xử lý việc truy xuất và xóa.</p>
+**2.Xác định trách nhiệm và thuộc tính**
+> Quản trị viên tiền lương
+
+* Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
+* Trách nhiệm : Khởi tạo các hành động thêm, cập nhật hoặc xóa hồ sơ nhân viên.
+> Hệ thống
+
+* Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
+* Trách nhiệm : Quản lý tương tác của người dùng, nhắc nhở nhập liệu và truyền thông tin đến EmployeeService.
+> Người lao động
+
+* Thuộc tính :
+  
+        -  employeeId: String
+        -  name: String
+        -  employeeType: String(theo giờ, theo lương, theo hoa hồng)
+        -  address: String
+        -  socialSecurityNumber: String
+        -  taxDeductions: String
+        -  otherDeductions: String
+        -  phoneNumber: String
+        -  hourlyRate: Double
+        -  salary: Double
+        -  commissionRate: Double
+        -  hourLimit: Double
+* Trách nhiệm : Thể hiện hồ sơ nhân viên cá nhân với tất cả các thuộc tính có liên quan.
+> Dịch vụ nhân viên
+
+* Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
+* Trách nhiệm : Thực hiện các thao tác thêm, cập nhật và xóa trên hồ sơ nhân viên.
+> Cơ sở dữ liệu
+
+* Thuộc tính : Không có thuộc tính cụ thể nào cho trường hợp sử dụng này.
+* Trách nhiệm : Lưu trữ và truy xuất thông tin nhân viên.
+
+**3.Biểu đồ trình tự**
+![Diagram](https://www.planttext.com/api/plantuml/png/v9L1IiD058RtESMxW1SGAa9Tk111BABBD2qcOAOXcPHsAIvSk574bGkDKeI2AEYgit0nfVUO4tW5_vaepgIDPE-cMSpt__F-zrxIJ_6ncN4_vNbyula17wIqbwlP8-kaIbmSH7BAEf4IfsndyRees37v6IM-bq0H1L7YCqxRIfntGYMkojDid3d7M_09mWCb9hkXV636KdFzEDdlfqE7RI-AVINk87dPmQtdkGPxNSzhjQWJocbCneDAarOBObhRq5VIEXt9QKw1cZtbn0tB33lKhASHaE2hu3lAvX5pQDksdGC0FKdgw6_lxq2GbANMq3yO5BqkO3IsjWu0hh6Q5GCQodiwbWMZM3xMMPUr7yeY0A5cpupcLw3BnWoLk8sMr7QBjj7zCmOSmwk256kvcKaRpWbcWWTlE9h0I5WfQJ2XQfMshRaugGjYjItDnpJ2Mazuuwa07XFYNrEsA9puFEmFz9tBqqdnukZcdZQufKpWzBd1CkBjUFOnIYLkeiRhsBPRlYhIwfrS6TviaJt3lvVE8VN67Cetl-6cZ3JwtpR4pcWtKZV3IMOTBiUPN-Bp458F9UQLyM7VIhDg7aTJC_jLufel3Nv-xOp6s-opdlwR-G800F__0m00)
+
+**4.Biểu đồ lớp**
+![Diagram](https://www.planttext.com/api/plantuml/png/b5HFQnf17BtlfvXZXVe5F8G4XLeYWTPDyBfPnHdgpWQT2GsXXvA312-Hda8fPIjIQWXDQQ3W7d8OyNlC9-XNo9lDLjr_qdZmy9ltU_j-x_Tc_eOFkmFXz8NqUfRRSmO3yaRg-OJRVHsEZfYQSPlfy2DlBE-M0U-ISuj4ltTKXr-PhUU1RrCrymwe-iOZ_8jI5bBLyzkJ0uf_iHtOKh-T1EA35Skgwt1e0pZU476cPXBKtoKatFEkpNWEEuN-2svQH_y9Qwd0ZSIkJqN1ZExMmTuNJhEkniEKYQSc6zKAQOe-uztuKEJKUZuSOyKzYp5cSQgOw39zD82FUxp9E6sf2PozPca4TZAVIfE26viY4GzR0FiKXkLzOd45KuSmDLAQHdWw_E76kNe5u1S0QhuyxdN-3HXdBbKMElpJ06_TTo3zKnRG1TbdLiStUOftvNyDrhZqI8VJp2Qoo-vu9w1O5qh9IOfIWBRNxHNq9SdGvASasRQHcUeoQEAYGFhFXl5LhWJ3AFaSlQ8lprfOwhHORYd14FSjnYhWj6OMlxZ2TJ6tDK_lzYUaNDv9tEOA4V69C3awDSkpDW6c8NTX5PEoMz965J2N-iGr357SH9J_QyoSsseuiuP22hxvourUWo4drRU7jOoKX82dPoDg6vdWt9in6BTsExnjtjH70000__y30000)
 
