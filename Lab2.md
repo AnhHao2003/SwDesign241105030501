@@ -335,10 +335,8 @@ Dựa trên mô tả, các lớp chính liên quan đến trường hợp sử d
   ![Diagram](https://www.planttext.com/api/plantuml/png/b5NDQjj04BxhAUOOG_m2ffXG1nA8yIN6zAfkZ5PKMXbhPMnA3wM777ffwBdKgicXBIOfxSbBo663tqDFq5Veh2nh9Qzafxx4cPzlllbcTlnNF9w4t1xpoFSiujbX2EU9kExJHDmmf-ycuZthhk_NCNFWhGNfXz1a5SzAlgE6zSxAydjKVcC3L_vWMKOJVBaeM5jmoSSkSp8dhx1v0PPmjuLtdRdvT4XSt_OoEv4nkQ2OkM0NIF4sweyJyHF3kcx8NsmWsbdiY6v0LAFVIP_QZFO36PlanaX4XSdOBVi0YIyPhH3WfMBWT1G5loF_vCeTq254oSzGr2zTEVS7-EMQ62qoHyvdochpeIxuz0afdClv_rJQZA-G-RnIPwuTd2RY8w4z1-6DejfVNzGebRhatCs6jvjPqqlEgR2m1Yc0QIAMNVcWYHszvWXIrKXXXXlN816trM-WD7isGK1DyHYucfon1iSm2j2kDM_iA96JrVjeObVfM23UMSUNYVYA_E-wQeSYJNaSpLv5o8Phk0uDUchE-59MYtoLjqz6nxKp30_JPnfR1nnL3wbH8byDOkYq1okbPIJKiDD27qBKaLkegVnj7-vEoLvxBflDTkqQjTGObt253loFq20zNi2e8kx31Et0DqFEhjt-EkRKM-cyOPeE72Po3YHPBKTO0lzmGA3F4AvZguwXGYsrd6vypcPVMkMDG02yf04uw5Hzgmj1Q3HBn0S6RxA7ZzTM_2AgyzNZoAh4KGMg7tmB7DJKXQSRn4nV4dZomJAbCLh3fgAqzbrDj7dHdv5Kkgs5w9CXkrA_jly0003__mC0)
 
 ***Code mô phỏng***
-
-> import java.util.*;
-
-> // Lớp đại diện cho một timecard
+ import java.util.*;
+ // Lớp đại diện cho một timecard
 class Timecard {
     private String employeeId;
     private Date date;
@@ -375,8 +373,7 @@ class Timecard {
                 '}';
     }
 }
-
-> // Lớp giả lập cơ sở dữ liệu để lưu trữ thông tin các timecard
+// Lớp giả lập cơ sở dữ liệu để lưu trữ thông tin các timecard
 class Database {
     private List<Timecard> timecards = new ArrayList<>();
 
