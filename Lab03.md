@@ -28,3 +28,12 @@ Xác định các phần tử thiết kế của hệ thống “Payroll System�
      - Hệ thống **PrintService** chịu trách nhiệm tạo và in phiếu lương giấy cho nhân viên.
      - **PayrollController** sử dụng giao diện IPrintService để tạo phiếu lương từ dữ liệu và gửi yêu cầu in.
 
+ * *Biểu đồ ngữ cảnh*
+   ![Diagram](https://www.planttext.com/api/plantuml/png/Z9B1JiCm38RlUGfh5xP3jNjLLPCGXzqg-WGXCrlKD8bYTw82dem3ZyGhaAGThEp2BRP_VxzjvUlZSqSi0m-z4THfwsMGFNYfEdd4baU3452nj4U3Gjp1lRCSd05b9549ZHnZPEQimI1ouJOFLQMceAxXLG1ijn066vsoSBqHxmc_jupXMIeiOTy4RRd5SDOAXRuKblcC0l0fjPRHLPrGTNck_DgKS7RwCC7RuOb6OkoX2UvbZAfhXtdmQtXLqK-BJotpxFyrVB2iUPnkzNkOh8jipDMCpEf7D9AritJIdiJj1OkY_hDy2Ij2Uw1qnKmbOBSIIr7rLXJBJPVrXBrC9SGkyj9V-0O00F__0m00)
+
+   **Giải thích các thành phần**
+
+* *PayrollController:* Thành phần xử lý việc gửi phiếu lương để in.
+* *IPrintService:* Giao diện trừu tượng cho các dịch vụ in ấn.
+* *PrintService:* Proxy đại diện cho hệ thống thực hiện in phiếu lương.
+* *Paycheck:* Phiếu lương cần được in.
