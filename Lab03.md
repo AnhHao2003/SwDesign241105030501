@@ -2,7 +2,9 @@
 ### Lab 3. Identify design elements ###
 Xác định các phần tử thiết kế của hệ thống “Payroll System”
 
-# 1. Subsystem: BankSystem
+# 1. Subsystem: 
+
+***Subsystem:BankSystem***
 * Mô tả
      - Hệ thống **BankSystem** chịu trách nhiệm xử lý các khoản thanh toán qua ngân hàng.
      - **PayrollController** sẽ sử dụng giao diện **IBankSystem** để tương tác với hệ thống, thực hiện gửi thông tin thanh toán (Paycheck) đến thông tin tài khoản ngân hàng **(BankInformation)** của nhân viên
@@ -19,3 +21,10 @@ Xác định các phần tử thiết kế của hệ thống “Payroll System�
 * *BankSystem:* Proxy đại diện cho hệ thống con thực sự, xử lý các yêu cầu gửi thanh toán.</p>
 * *Paycheck:* Thực thể đại diện cho phiếu thanh toán.</p>
 * *BankInformation:* Thực thể lưu trữ thông tin tài khoản ngân hàng.</p>
+
+
+***Subsystem: PrintService***
+* Mô tả
+-      Hệ thống **PrintService** chịu trách nhiệm tạo và in phiếu lương giấy cho nhân viên.
+-     **PayrollController** sử dụng giao diện IPrintService để tạo phiếu lương từ dữ liệu và gửi yêu cầu in.
+
