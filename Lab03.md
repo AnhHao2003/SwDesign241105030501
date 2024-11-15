@@ -124,14 +124,12 @@ Xác định các phần tử thiết kế của hệ thống “Payroll System�
 - **Paycheck**: Đại diện cho phiếu lương của nhân viên.
 - **Timecard**: Đại diện cho bảng chấm công của nhân viên.
   
-### - **CommissionCalculator** và **OvertimeCalculator**:
+   - **CommissionCalculator** và **OvertimeCalculator**:
 - **CommissionCalculator** và **OvertimeCalculator** là các dịch vụ xử lý các tính toán liên quan đến hoa hồng và giờ làm thêm của nhân viên.
-
-## 5. Data Access Layer:
-### - **DatabaseService**:
+*5. Data Access Layer:*
+ - **DatabaseService**:
 - Chịu trách nhiệm kết nối và thao tác với cơ sở dữ liệu, lưu trữ và truy xuất thông tin về nhân viên, bảng chấm công và phiếu lương.
-
-### - Các hệ thống con (subsystems):
+- Các hệ thống con (subsystems):
 - **BankSystem**: Chịu trách nhiệm xử lý các giao dịch thanh toán cho nhân viên (ví dụ: chuyển khoản lương).
 - **PrintService**: Chịu trách nhiệm in ấn các phiếu lương hoặc báo cáo liên quan đến lương.
 - **ProjectManagementDatabase**: Chịu trách nhiệm quản lý và truy vấn dữ liệu về các dự án và mã số công việc từ hệ thống quản lý dự án.
