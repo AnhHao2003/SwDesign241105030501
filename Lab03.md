@@ -12,7 +12,6 @@ Xác định các phần tử thiết kế của hệ thống “Payroll System�
 * *Biểu đồ ngữ cảnh*
   ![digram](https://www.planttext.com/api/plantuml/png/h591JiCm4Bpx5QjUsaf4lKTHL84uv5QH5opEjhNYs97NgOY0bt7WINo1s4bf85SkbhqpdfbT--lZSyyUdUyQBRXMfaM73RGeQpnHwNjDu4XwD2TDGgpXmHhlh0QfaJc50_R3IKzLJKv4O5c7B9FZ8S_XLG3iTk0wCpX5ucOhteDyOJov8qfAeRX7KvSzUsg4kfRdrIW3K55hMVaD3fxoJBAEgUBk3eQBDjn88Qo5ELhNe5VMR5EuM5MDhcNtpAFamTcNVYHFrcC_CzSiunzw6-XJG_-IvD5uvVjnkiItOKQHmPeY7Xq7_YtRJ6_1MiCJwGZnMRKibc-J9FclmQQmgbHuzcjB3340mqNXIiofsLkIpCSrnuBiDVi2-9DQY3sPAlp2Rm000F__0m00)
 
-
  
 **Giải thích các thành phần**
 
@@ -98,4 +97,7 @@ Xác định các phần tử thiết kế của hệ thống “Payroll System�
 
 ---
 
+# 4.	Architectural layers and their dependencies
 
+
+![diagram](https://www.planttext.com/api/plantuml/png/X5NBZXCn4BpFLrZXm2a2SKIhQ3TPX90M4H4u8CIXrzERc7ZimUr9626-Z0EVn2_GdlSpEKNZhkxggfHd_ltvUqiUdCyI7T5HcHGS94BQ9BK6ZT_vNADmA3sOlSOE90LvX3tE0-W0iJqhinVUPTs2iJ5k8Ov3wTNBA7ekjWw9oS0hQyG3vEYYQhnOZ6iByUn1xGz-hJCKlo8XlducTEATyUYUGE8tSNFJ25YjHFGxSDobgLPoac9KgXdUEaHJKcmXTrRhZJK-_A8BB3g0cQ6YM6Ua31A97RgJaaX3eXb0JVS5jRRd7by5x9Dn-KsIQfiZJjQBPUvj0ceajNlQgeIy9AsdXd7idVBvQbKj8myeZyFpJof12IuUdcziaYWYzdC3McOQl2tyedBR4lJXXCxpW3b8gG8yY3ifWsb3ASDIhMUhpB7K4o2FG1CkXUeQp76NayUa8CuUgNWGgRC_Q-5EyHreksT0zZld_pqOtYjX7shQwOv2rqVKHTxee5AAHW5UyiqnozLax5wBXGf8a9x4MVd38fg23KSqAhXVWjPqfMsKiBOl6irSTZiAQ5AuqI7fOzj4CNQFXkNuUNIRi-kJfxDNBbyyygsJ3MPkobGu-pDiXGXsZBowvCSqk6T80vxPRfHhxY7U4Uc5G-yKddZ1c44p_t6OqKr_Q4SJ4x_Kyn1W4jvUQEtVYgRvoJeEEPVunNwnU_QwyAWV6VB-56vBG5Kgeh7aiSLGl0iAZwVHFO-ledkXQz7HBOiDNyl_0000__y30000)
