@@ -25,6 +25,6 @@ Xác định các phần tử thiết kế của hệ thống “Payroll System�
 
 ***Subsystem: PrintService***
 * Mô tả
--      Hệ thống **PrintService** chịu trách nhiệm tạo và in phiếu lương giấy cho nhân viên.
--     **PayrollController** sử dụng giao diện IPrintService để tạo phiếu lương từ dữ liệu và gửi yêu cầu in.
+     - Hệ thống **PrintService** chịu trách nhiệm tạo và in phiếu lương giấy cho nhân viên.
+     - **PayrollController** sử dụng giao diện IPrintService để tạo phiếu lương từ dữ liệu và gửi yêu cầu in.
 
