@@ -56,3 +56,28 @@ Xác định các phần tử thiết kế của hệ thống “Payroll System�
 * *ProjectData:* Thực thể đại diện cho dữ liệu dự án được truy xuất.
 
 
+# 2. Analysis Class to Design Element Map
+
+
+# Analysis Class to Design Element Map
+
+| **Analysis Class**         | **Design Element**                                   | **Mô tả**                                                                                                                                       |
+|-----------------------------|-----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Employee**               | Employee Entity Class                               | Lớp lưu thông tin của nhân viên như ID, tên, địa chỉ, phương thức thanh toán.                                                                   |
+| **Timecard**               | Timecard Entity Class                               | Lớp đại diện cho bảng chấm công của nhân viên, bao gồm ngày làm việc, số giờ làm, số charge.                                                   |
+| **PaymentMethod**          | PaymentMethod Interface                             | Giao diện trừu tượng cho các phương thức thanh toán như chuyển khoản (Direct Deposit), nhận tiền mặt, nhận qua phiếu lương giấy.                |
+| **Paycheck**               | Paycheck Entity Class                               | Lớp đại diện cho phiếu thanh toán, bao gồm số tiền lương, thuế, và chi tiết thanh toán.                                                         |
+| **PayrollAdministrator**   | PayrollAdministrator Control Class                  | Lớp điều khiển xử lý các thao tác quản trị như thêm, xóa, sửa thông tin nhân viên, và quản lý các phương thức thanh toán.                       |
+| **BankService**            | BankSystem Subsystem Proxy                          | Thành phần xử lý kết nối đến hệ thống ngân hàng để thực hiện các giao dịch thanh toán.                                                         |
+| **PrintService**           | PrintService Subsystem Proxy                        | Thành phần kết nối đến hệ thống in ấn để in phiếu lương cho nhân viên.                                                                          |
+| **ProjectManagementQuery** | ProjectManagementDatabase Subsystem Proxy           | Thành phần truy vấn cơ sở dữ liệu quản lý dự án, lấy dữ liệu số charge và thông tin dự án.                                                      |
+| **PayrollController**      | PayrollController Class                             | Lớp điều khiển chính của hệ thống, chịu trách nhiệm điều phối hoạt động từ việc nhận dữ liệu đầu vào đến xử lý thanh toán và xuất báo cáo.      |
+| **CommissionCalculator**   | CommissionCalculator Strategy Implementation Class  | Thành phần tính toán hoa hồng cho nhân viên hưởng lương theo doanh số.                                                                          |
+| **OvertimeCalculator**     | OvertimeCalculator Strategy Implementation Class    | Thành phần tính toán lương làm thêm giờ cho nhân viên làm việc vượt giờ.                                                                        |
+| **EmployeeReport**         | EmployeeReport Boundary Class                       | Lớp chịu trách nhiệm tạo báo cáo cho nhân viên, bao gồm số giờ làm việc, số charge, tổng lương nhận, và thời gian nghỉ còn lại.                 |
+
+---
+
+
+
+
