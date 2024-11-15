@@ -37,3 +37,22 @@ Xác định các phần tử thiết kế của hệ thống “Payroll System�
 * *IPrintService:* Giao diện trừu tượng cho các dịch vụ in ấn.
 * *PrintService:* Proxy đại diện cho hệ thống thực hiện in phiếu lương.
 * *Paycheck:* Phiếu lương cần được in.
+
+
+***Subsystem: ProjectManagementDatabase***
+* Mô tả
+     - Subsystem này cho phép PayrollController truy vấn thông tin về dự án từ cơ sở dữ liệu quản lý dự án.
+     - PayrollController sử dụng giao diện IProjectManagementDB để gửi truy vấn và nhận thông tin.
+
+ * *Biểu đồ ngữ cảnh*
+
+![Diagram](https://www.planttext.com/api/plantuml/png/f591JiCm4Bpx5QjUW4FKUnH55PH33w2Al63ZRXDJnmds1X41B-F0a_W2TfAMLWrSE7fdTcPdrryVdml7QBcjj70xPHgqM463SeS5PTnf0akIqHIQXBY0czgmhJL8ZSx5iCREl_HOrMH53vpN8Kday4XJU1K0ypbiYMK9ZQqVlGDia56y1u-LOR9Rb1J3QZsWTsZyF1KPNbuBjSSduLuTuAabsutmqajVoX9jGVTjbPED8MEhJ77b4_nG1lUipLtdcAe0lNG7nf67v-ReQ9_rDzndTWUn9eYDsVyntQrXnTsm_bF_mF6Er1DwexxXWJIogeqhLUF4-LsYA9rUOmopCAKYTt8YU5Ou4vCToLiK_R6joPvWVnnIBCXimcVy1W00__y30000)
+
+  **Giải thích các thành phần**
+
+* *PayrollController:* Thành phần xử lý yêu cầu truy vấn thông tin dự án.
+* *IProjectManagementDB:* Giao diện trừu tượng để tương tác với cơ sở dữ liệu quản lý dự án.
+* *ProjectManagementDatabase:* Proxy đại diện cho cơ sở dữ liệu thực sự.
+* *ProjectData:* Thực thể đại diện cho dữ liệu dự án được truy xuất.
+
+
