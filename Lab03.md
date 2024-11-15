@@ -59,7 +59,6 @@ Xác định các phần tử thiết kế của hệ thống “Payroll System�
 # 2. Analysis Class to Design Element Map
 
 
-# Analysis Class to Design Element Map
 
 | **Analysis Class**         | **Design Element**                                   | **Mô tả**                                                                                                                                       |
 |-----------------------------|-----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -78,6 +77,25 @@ Xác định các phần tử thiết kế của hệ thống “Payroll System�
 
 ---
 
+# 3.	Design element to owning package map
 
+  | **Design Element**                | **Owning Package**        | **Mô tả**                                                                                  |
+|-----------------------------------|---------------------------|--------------------------------------------------------------------------------------------|
+| **Employee**                      | `entities`                | Lớp thực thể lưu trữ thông tin của nhân viên như ID, tên, địa chỉ, và phương thức thanh toán.|
+| **Timecard**                      | `entities`                | Lớp thực thể lưu trữ thông tin về bảng chấm công của nhân viên.                            |
+| **Paycheck**                      | `entities`                | Lớp thực thể đại diện cho phiếu thanh toán.                                                |
+| **PaymentMethod**                 | `interfaces`              | Giao diện trừu tượng cho các phương thức thanh toán.                                       |
+| **DirectDepositPayment**          | `implementations`         | Hiện thực phương thức thanh toán qua chuyển khoản.                                         |
+| **PaycheckPrinter**               | `implementations`         | Hiện thực phương thức in phiếu lương.                                                     |
+| **BankService**                   | `subsystems.bank`         | Proxy đại diện cho hệ thống ngân hàng để thực hiện các giao dịch thanh toán.              |
+| **PrintService**                  | `subsystems.print`        | Proxy đại diện cho hệ thống in ấn để in phiếu lương giấy.                                  |
+| **ProjectManagementQuery**        | `subsystems.database`     | Proxy đại diện cho hệ thống cơ sở dữ liệu quản lý dự án để truy vấn thông tin.             |
+| **PayrollController**             | `controllers`             | Lớp điều khiển chính của hệ thống, điều phối hoạt động xử lý thanh toán và báo cáo.        |
+| **PayrollAdministrator**          | `controllers`             | Lớp điều khiển quản lý các tác vụ của người quản trị nhân sự.                              |
+| **CommissionCalculator**          | `strategies.calculators`  | Hiện thực chiến lược tính toán hoa hồng.                                                   |
+| **OvertimeCalculator**            | `strategies.calculators`  | Hiện thực chiến lược tính toán lương làm thêm giờ.                                          |
+| **EmployeeReport**                | `boundaries.reports`      | Lớp tạo báo cáo cho nhân viên.                                                             |
+
+---
 
 
