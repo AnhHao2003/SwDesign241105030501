@@ -14,8 +14,8 @@ Xác định các phần tử thiết kế của hệ thống “Payroll System�
  
 **Giải thích các thành phần**
 
-*PayrollController*: Thành phần điều khiển xử lý logic chính, chịu trách nhiệm thực hiện thanh toán.</p>
-*IBankSystem:* Giao diện trừu tượng để tương tác với hệ thống ngân hàng.</p>
-*BankSystem:* Proxy đại diện cho hệ thống con thực sự, xử lý các yêu cầu gửi thanh toán.</p>
-*Paycheck:* Thực thể đại diện cho phiếu thanh toán.</p>
-*BankInformation:* Thực thể lưu trữ thông tin tài khoản ngân hàng.</p>
+* *PayrollController*: Thành phần điều khiển xử lý logic chính, chịu trách nhiệm thực hiện thanh toán.</p>
+* *IBankSystem:* Giao diện trừu tượng để tương tác với hệ thống ngân hàng.</p>
+* *BankSystem:* Proxy đại diện cho hệ thống con thực sự, xử lý các yêu cầu gửi thanh toán.</p>
+* *Paycheck:* Thực thể đại diện cho phiếu thanh toán.</p>
+* *BankInformation:* Thực thể lưu trữ thông tin tài khoản ngân hàng.</p>
