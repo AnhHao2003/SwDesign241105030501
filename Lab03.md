@@ -1,3 +1,9 @@
 
 ### Lab 3. Identify design elements ###
 Xác định các phần tử thiết kế của hệ thống “Payroll System”
+
+# 1. Subsystem context diagrams
+
+  ![digram](https://www.planttext.com/api/plantuml/png/l59BJiCm4Dtx5BEZbKWF425KqMwwgK0zWUjCKwl-HFOOgOAkMRDcnGauG1OiE4bFm1MmcwHDYzYIHPAPD_FUZFs-wy-n9-ueQCNO5Ko-tWMeVVrM0JbhIbZlwnUW-7wDmHqtcyNM4sec5FSUxldMMQKcrb3weeCd1kbnmRJOOCXsZ4b3w5PS8CnE95rnWPNraWOyjeWrYaqEtTyrn4wRMlA3-ioihDESf3N3fbbOiv9EJrkE8UJmQ6MHH9iPUtfILmer6lB_DaR2iX8DEaxOqHtWBZXDscNQWJAkRJ0KImiRbWgRP15vPju7B28mZK6ZtqdySG2zWJlsPKpFkSPOlo0dJTcA2f5Kvq4lutMUOL644jaKYKlb3r8jl4lcUGZSD8OfvRx-u22ERcA_dP9bjsUta4Fmw5a_TVCy6lLDruDIz_6yykFw_hBcSlaSueBean8ReocIxty0003__mC0)
+
+ 
