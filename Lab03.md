@@ -102,24 +102,24 @@ Xác định các phần tử thiết kế của hệ thống “Payroll System�
 
 ![diagram](https://www.planttext.com/api/plantuml/png/X5NBZXCn4BpFLrZXm2a2SKIhQ3TPX90M4H4u8CIXrzERc7ZimUr9626-Z0EVn2_GdlSpEKNZhkxggfHd_ltvUqiUdCyI7T5HcHGS94BQ9BK6ZT_vNADmA3sOlSOE90LvX3tE0-W0iJqhinVUPTs2iJ5k8Ov3wTNBA7ekjWw9oS0hQyG3vEYYQhnOZ6iByUn1xGz-hJCKlo8XlducTEATyUYUGE8tSNFJ25YjHFGxSDobgLPoac9KgXdUEaHJKcmXTrRhZJK-_A8BB3g0cQ6YM6Ua31A97RgJaaX3eXb0JVS5jRRd7by5x9Dn-KsIQfiZJjQBPUvj0ceajNlQgeIy9AsdXd7idVBvQbKj8myeZyFpJof12IuUdcziaYWYzdC3McOQl2tyedBR4lJXXCxpW3b8gG8yY3ifWsb3ASDIhMUhpB7K4o2FG1CkXUeQp76NayUa8CuUgNWGgRC_Q-5EyHreksT0zZld_pqOtYjX7shQwOv2rqVKHTxee5AAHW5UyiqnozLax5wBXGf8a9x4MVd38fg23KSqAhXVWjPqfMsKiBOl6irSTZiAQ5AuqI7fOzj4CNQFXkNuUNIRi-kJfxDNBbyyygsJ3MPkobGu-pDiXGXsZBowvCSqk6T80vxPRfHhxY7U4Uc5G-yKddZ1c44p_t6OqKr_Q4SJ4x_Kyn1W4jvUQEtVYgRvoJeEEPVunNwnU_QwyAWV6VB-56vBG5Kgeh7aiSLGl0iAZwVHFO-ledkXQz7HBOiDNyl_0000__y30000)
 
-# Giải Thích
+* Giải Thích
 
-## 1. Presentation Layer:
-### - **User Interface**:
+ *1. Presentation Layer:*
+ - **User Interface**:
 - Là nơi người dùng tương tác với hệ thống.
 - Người dùng sẽ nhập thông tin và yêu cầu hệ thống xử lý qua `PayrollController`.
-
-## 2. Application Layer:
-### - **PayrollController**:
+  
+ *2. Application Layer:*
+ - **PayrollController**:
 - Nhận yêu cầu từ giao diện người dùng và gọi các dịch vụ trong **Business Services Layer** để xử lý.
 
-## 3. Business Services Layer:
-### - **PayrollService** và **EmployeeService**:
+*3. Business Services Layer:*
+- **PayrollService** và **EmployeeService**:
 - **PayrollService** và **EmployeeService** chịu trách nhiệm quản lý các yêu cầu liên quan đến lương, nhân viên và các dịch vụ nghiệp vụ như tính toán hoa hồng, làm thêm giờ.
 - **PayrollService** sẽ làm việc với các đối tượng như `Employee`, `Paycheck`, và `Timecard`.
 
-## 4. Domain Layer:
-### - Các đối tượng trong Domain:
+ *4. Domain Layer:*
+ - Các đối tượng trong Domain:
 - **Employee**: Đại diện cho thông tin của nhân viên trong hệ thống.
 - **Paycheck**: Đại diện cho phiếu lương của nhân viên.
 - **Timecard**: Đại diện cho bảng chấm công của nhân viên.
