@@ -17,6 +17,8 @@
 - LoginForm là một lớp boundary được thiết kế để cách ly giao diện với logic xử lý.
 - SecurityManager xử lý việc xác thực và đảm bảo tính độc lập của chức năng bảo mật.
 
+![diagram](https://www.planttext.com/api/plantuml/png/R90_Ra8n38Ttdy8ZIA3kRq0iT6gdYWEOn42aF0SvTgjtDWQEr2iq6Hvj4MFYt_Vvp_Vrjgr6QZvce615SLzPuL1S8kc4R-MKvBNe2A68QSdumS4rsVHEGgSMPR7smjruoMLY1kW2N6z-qG5RflrvAmYDZ2GHBrJhLz6uMC8zsAa7_O2Vb5CauyMCh-xi4XxINJ0FCk2HBPmnACS-8-KASmtNppefcwjWQqRFn7_s8RTpTmQoLAI1rRFztwDVOS3g8N2jBqTAsPLXonBRgNy0003__mC0)
+
 ---
 
 ## 2. Maintain Timecard (Quản lý bảng chấm công)
