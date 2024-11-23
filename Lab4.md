@@ -17,6 +17,7 @@
 - LoginForm là một lớp boundary được thiết kế để cách ly giao diện với logic xử lý.
 - SecurityManager xử lý việc xác thực và đảm bảo tính độc lập của chức năng bảo mật.
 
+### **Sơ đồ minh họa**
 ![diagram](https://www.planttext.com/api/plantuml/png/R90_Ra8n38Ttdy8ZIA3kRq0iT6gdYWEOn42aF0SvTgjtDWQEr2iq6Hvj4MFYt_Vvp_Vrjgr6QZvce615SLzPuL1S8kc4R-MKvBNe2A68QSdumS4rsVHEGgSMPR7smjruoMLY1kW2N6z-qG5RflrvAmYDZ2GHBrJhLz6uMC8zsAa7_O2Vb5CauyMCh-xi4XxINJ0FCk2HBPmnACS-8-KASmtNppefcwjWQqRFn7_s8RTpTmQoLAI1rRFztwDVOS3g8N2jBqTAsPLXonBRgNy0003__mC0)
 
 ---
@@ -36,6 +37,9 @@
 ### **Lý do thiết kế**
 - Phân tách rõ ràng giữa giao diện (TimecardForm), logic điều khiển (TimecardController), và dữ liệu (ProjectManagementDatabase) để đảm bảo tính mô-đun và dễ bảo trì.
 - Hỗ trợ linh hoạt cho nhân viên trong việc quản lý giờ làm việc của họ.
+
+### **Sơ đồ minh họa**
+![diagram](https://www.planttext.com/api/plantuml/png/V5793S903Fox2ZUG1l90aJX-I3nemDar4BH7v7MGKXiFIg854d4aY8IdxHdFU7o_tega9Dfu1sGq2gvzxMBB36LiWYLfSLzvDYHs4yM3YK4bkazp-QmT2rXIAYanxYIUsUYM0XtPSz3LQmBmtexPucjlZh7cWFfgmNWsnWvoEGghL7pXNzQ0whcpTd8yi9eJziPX5eNPl7uZ4vx7wZzdsYhLZjg1DPz8KtV69gxxbqcYBWzped3a10K7sp_s0G00__y30000)
 
 ---
 
@@ -59,6 +63,10 @@
 - PayrollController đảm nhận vai trò "control" chính, phối hợp tất cả các thành phần cần thiết.
 - Phân tách rõ các chức năng như giao dịch ngân hàng (BankSystem) và in ấn (PrinterInterface) giúp dễ dàng mở rộng khi tích hợp hệ thống.
 
+### **Sơ đồ minh họa**
+
+![diagram](https://www.planttext.com/api/plantuml/png/T591JiGm3Bpd5Vu07-W1hUXUE21MWW-OnAj6JUBASK1z6mUUn1T8jYnTA7j9OZip6O_p-VwnougY9GQ3LbdWQSvAiGziHsCvgN200yvr2_qI1X93IRtEyEmZMHHtZWz5x82P7iMjbohQ3bJfNhWaXr8pufEItBVbY9RMoXscSL5Wp8KIkBdTYkZWH0iJpWvdiwatq5bW1q8gdbu9tbX66BX8_X_oguSBdEKOVSwU4_Xqv2lWxrwhDWos15Hg-cArmc3GLczdU20TkAhQUo6hiAU9irS3souRw-fA1vcI-w6aa6d3kRZhe3-PVeNoxmWwc5gcCI_3gi-ONLtQp_W2003__mC0)
+
 ---
 
 ## 4. Select Payment Method (Chọn phương thức thanh toán)
@@ -73,6 +81,9 @@
 ### **Lý do thiết kế**
 - Đáp ứng yêu cầu tùy biến cho nhân viên về cách thức nhận lương.
 - Hỗ trợ tính linh hoạt của hệ thống khi các phương thức thanh toán mới được bổ sung.
+
+### **Sơ đồ minh họa**
+![diagram](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bTYSab-aO9hRa5EVcLgAbTIVcbUIc9HfK90OcLHVawEStvU2OXEBU9ApIl9BAb4AEM2iHHqxJ2LMoaKf-Qa9fSe52HMvWArAkIcbcJaft1XA0JfXfbafL1Qa99OaegkoI4rBmNaM000003__mC0)
 
 ---
 
@@ -91,4 +102,5 @@
 ### **Lý do thiết kế**
 - Phân tách việc tạo báo cáo ra khỏi các chức năng chính để dễ bảo trì.
 - Hỗ trợ quản lý dễ dàng thông qua các báo cáo thống kê.
-
+### **Sơ đồ minh họa**
+![diagram](https://www.planttext.com/api/plantuml/png/V90v3i9034NxEOLBA11z2XGKe8u4eX_D618nI-8uHSv6mP6u0jbS1QModkHd-_lx_gGDQ-BMEwKDHuAZzMLG9WQcw23NNLzSDg53KXYuv0xEldAnGnI-bHwD9YlSYwP0yr9g70Yxmt9M0eHrYmttjOh4Qj4nQB8fWGUoAG1d1gjP_rVa655uvXL5xXMbcffMZ35N0ayCI9fnpW2R_7JPPzVxLgKOxF3N7m000F__0m00)
