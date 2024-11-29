@@ -104,3 +104,42 @@
 - Hỗ trợ quản lý dễ dàng thông qua các báo cáo thống kê.
 ### **Sơ đồ minh họa**
 ![diagram](https://www.planttext.com/api/plantuml/png/V90v3i9034NxEOLBA11z2XGKe8u4eX_D618nI-8uHSv6mP6u0jbS1QModkHd-_lx_gGDQ-BMEwKDHuAZzMLG9WQcw23NNLzSDg53KXYuv0xEldAnGnI-bHwD9YlSYwP0yr9g70Yxmt9M0eHrYmttjOh4Qj4nQB8fWGUoAG1d1gjP_rVa655uvXL5xXMbcffMZ35N0ayCI9fnpW2R_7JPPzVxLgKOxF3N7m000F__0m00)
+
+## 6. Manage Employee Information (Quản lý thông tin nhân viên)
+
+### **Mô tả**
+- Quản trị viên có thể thêm mới, cập nhật, hoặc xóa thông tin nhân viên.
+- Thông tin bao gồm: tên, địa chỉ, số điện thoại, phương thức thanh toán, thông tin ngân hàng, và vai trò.
+
+### **Thành phần tham gia**
+- **EmployeeForm**: Giao diện nhập và hiển thị thông tin nhân viên.
+- **Employee Entity**: Lưu thông tin chi tiết của nhân viên.
+- **SecurityManager**: Kiểm tra quyền truy cập của quản trị viên.
+
+### **Lý do thiết kế**
+- Đảm bảo tính linh hoạt khi có thay đổi nhân sự.
+- Hỗ trợ quản trị viên cập nhật thông tin nhanh chóng và chính xác.
+
+### **Sơ đồ minh họa**
+![diagram](
+https://www.planttext.com/api/plantuml/png/T90nRiCm34LtdO8NAB9xAD8XMOfqIGUlhAn61YmgbUa27ejS9CaOm5CpnKC7dSGdo1Kg6d4wTIB1__a-mMl_CwyP0pUkKgZP1tWgN4c0DQ0qwiqtL61eOU6sbM-DMVhWH7vFLMbF77m5QwERK7AxGiAD2QBNjv4onAdSzqKpjrwfCGGU7aTS1Yzsk7HRO1lFj05E4jbu9FWiuucKUCGxeJDuBeT-vu03maVJ3lqNgKdyW-Rne1CdaMboISAUB6Z9kNEdip9ujV7aPkkXxt2Mns_yxwAveK9Uzmi00F__0m00)
+
+## 7. Access Management (Quản lý quyền truy cập)
+
+### **Mô tả**
+- Quản trị viên có thể cấu hình quyền truy cập cho từng loại người dùng:
+  - Nhân viên chỉ có thể xem thông tin cá nhân và bảng lương.
+  - Quản trị viên có toàn quyền quản lý hệ thống.
+  - Kế toán viên có quyền xem và tạo báo cáo.
+
+### **Thành phần tham gia**
+- **SecurityManager**: Quản lý việc kiểm tra và phân quyền.
+- **Role Entity**: Lớp mới lưu trữ vai trò và quyền hạn của từng người dùng.
+
+### **Lý do thiết kế**
+- Đảm bảo tính an toàn và bảo mật của hệ thống.
+- Dễ dàng mở rộng khi hệ thống cần hỗ trợ vai trò mới.
+
+
+### **Sơ đồ minh họa**
+![diagram](https://www.planttext.com/api/plantuml/png/H90nIWGn58RxdE9TGEoda9K56x5n5MopcJWJcBpiPfA5AHTBpo0eOhEm86BZfh08U8-Sm2kOD-FiL7zu-Vx_Vybl-9wrZbldTSEuSCR2UQaL0c-1qu4jZSUIsmwkJIElEF9AQedkmbXDq7rM9WmwQnfOIE6jSjs0MRfl_qSiUxBqAJJFk1ndj-t0-goCzRLmSjP75t1Jnvq-NQImvx3sNGfR16Tz1o8TzYj64C5ZJm6NAeK7dPc9N_jqU2LR2e-mKN67REIdehlu8W3hd8fJKHsViGOHFx4wLj7g1SofVk0TRBZAwV43iFfvJ-59GHc_ieLGij3B2eZR5PGfl65rDB2Pn9B-_Wy00F__0m00)
