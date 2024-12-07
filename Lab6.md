@@ -24,5 +24,7 @@
 ## Dependencies & Associations  
 - **LoginForm** phụ thuộc vào **SecurityManager**.  
 - **SecurityManager** phụ thuộc vào **Role Entity** để kiểm tra và xác định vai trò của người dùng
-## sơ đồ minh họa
+## Sơ đồ minh họa
+
+![diagram](https://www.planttext.com/api/plantuml/png/R95DJiD038NtSmghgxB81R90HVn8IC2YbTYxYHKi9ZFLs8CK8Kx6WYDn1PmqefF2B9_ztcTxlZ-_DgAODFSUhhA-K51kK3c6NTxB84gzSmTiNh4ZM2qxuBTb1UyEx3KUHU0XTXpkOkfdzVWu7B9U9sh70FIolfYA7wvmxgZ9YNLun62yLFWho4BflgqjHmkLfPY9hBoFqHE60lo6dbihJcFzHzsQuzOIT5W0ayb_WQFwX3tL89euT0N8ihWBOzgIShf7LLsUxrYR4DhvQ723YfFd_1AZypHd3S_pKiVfdP4s5cE_w7u0003__mC0)
   
