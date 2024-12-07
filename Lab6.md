@@ -1,6 +1,6 @@
 
 # Class Design - Payroll System  
-
+### Authentication Subsystem
 ## Xác định Operations & Methods  
 
 ### Operations:  
@@ -24,3 +24,5 @@
 ## Dependencies & Associations  
 - **LoginForm** phụ thuộc vào **SecurityManager**.  
 - **SecurityManager** phụ thuộc vào **Role Entity** để kiểm tra và xác định vai trò của người dùng
+## sơ đồ minh họa
+  
